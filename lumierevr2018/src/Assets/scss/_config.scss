@@ -1,0 +1,21 @@
+body { 
+	font-family: brandon-grotesque;
+	font-size: 18px;
+	color: black;
+	font-style: normal;
+	font-weight: 300;
+	}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+
+	&:hover{
+	color: blue;
+	text-decoration: none;
+	}
+}
+
+.container-fluid{
+	line-height: 24px;
+}
