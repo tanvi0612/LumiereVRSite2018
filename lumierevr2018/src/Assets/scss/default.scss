@@ -4,91 +4,37 @@
 	margin: 0;
 }
 
-	body {
-	font-family: brandon-grotesque;
-	}
 
 	@font-face{
 		font-family: "brandon-grotesque";
 	    font-style: regular;
 	    src: url('Brandon_reg.otf')	format('opentype');
-	}  
+	}
 
 	@font-face{
 		font-family: "brandon-grotesque";
 	    font-weight: bold;
 	    src: url('Brandon_bld.otf')	format('opentype');
-	}  
+	}
 
 	@font-face{
 		font-family: "brandon-grotesque";
 		font-style: italic;
 	    font-weight: 500;
 	    src: url('Brandon_bld_it.otf')	format('opentype');
-	}  
+	}
 
 	hr {
 		background-color:#000;
-		text-align: center; margin: 0 auto; 
+		text-align: center; margin: 0 auto;
 		color: black;
 		width: 60%;
 		margin-top: 50px;
 	}
- 
- 
-header{
-	position: relative;
-	display: block;
-	width: 100%;
-	background: black;
-	opacity: 0.8;
-	color: white;
-	height: 90px;
-	font-size: 20px;
 
-	.logo{
-		position: absolute;
-		left: 25px;
-		width: 200px;
-		height: 200px;
-		top: 20%;
-		img{
-			max-width: 100%;
-		}
-	}
 
-	nav,
-	nav ul,
-	nav ul li {
-		margin: 0;
-		padding: 0;
-	}
 
-	nav{
-		position: absolute;
-		top: 35%;
-		right: 15px;
-
-		ul li {
-			list-style-type: none;
-			display: inline-block;
-			margin-right: 10px;
-
-			&.last {
-				margin:0;
-			}
-
-			a {
-				font-size: 19px;
-				line-height: normal;
-				color: white;
-			}
-		}
-	}
-
-}
-
-div { 
+div {
 	margin: 0 auto;
 	width: 100%;
 
@@ -203,9 +149,9 @@ div {
 
 	}
 
-	h1{ 
+	h1{
 		padding-top:25px;
-		font-weight: bold;	
+		font-weight: bold;
 	}
 
 	h2 {
@@ -219,42 +165,5 @@ div {
 		}
 	}
 
-}
-	
-footer {
-	background: black;
-	color: white;
-	padding: 25px;
-
-	/*.containerFooter {
-		width: 100%;
-		background: black;
-
-	}
-
-	.footerLeft {
-		float: left;
-		width: 70%;
-	}
-
-	.footerRight {
-		float: right;
-		width: 30%;
-	}*/
-
-	ul {
-		display: inline-block;
-  		list-style-type: none;
-  		padding: 10px;
-	}
-
-	a {
-		color: white;
-		hover: white;
-	}
-
-	p {
-		text-align: center;
-	}
 }
 

@@ -1,0 +1,22 @@
+footer {
+  background: black;
+  color: white;
+  padding: 25px;
+
+  ul {
+    display: inline-block;
+    list-style-type: none;
+    padding: 10px;
+  }
+
+  a {
+    color: white;
+    &:hover {
+      color: white;
+    }
+  }
+
+  p {
+    text-align: center;
+  }
+}

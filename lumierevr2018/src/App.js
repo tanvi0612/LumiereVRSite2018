@@ -2,10 +2,11 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import "./assets/css/default.min.css";
-import Header from "./components/headerComponent/header";
+
+import Header from "./components/headerComponent/header.jsx";
 import Homepage from "./pages/homePage";
 import Distribute from "./pages/distribute";
-import Footer from "./components/footerComponent/footer";
+import Footer from "./components/footerComponent/footer.jsx";
 
 class App extends Component {
   render() {
