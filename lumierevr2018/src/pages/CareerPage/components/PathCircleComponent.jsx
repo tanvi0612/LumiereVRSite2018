@@ -5,7 +5,7 @@ export default class PathCircleComponent extends Component {
     super(props);
 
     this.state = {
-      titleSelected: true
+      titleSelected: null
     };
   }
 
