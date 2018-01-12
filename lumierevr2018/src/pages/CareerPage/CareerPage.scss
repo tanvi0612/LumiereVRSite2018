@@ -2,6 +2,9 @@
 
 .career-page {
   padding-top: 18vh;
+  @include mobile-lg {
+    padding: 5vh 0;
+  }
   h3 {
     text-align: center;
   }
@@ -9,6 +12,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @include mobile-lg {
+      flex-direction: column;
+    }
   }
   .path-circle {
     position: relative;
@@ -16,6 +22,9 @@
     height: 330px;
     width: 330px;
     overflow: hidden;
+    @include mobile-lg {
+      margin: 2rem 0;
+    }
     > img {
       position: absolute;
       top: 0;
