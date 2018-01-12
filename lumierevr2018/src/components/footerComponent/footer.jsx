@@ -5,9 +5,9 @@ class Footer extends Component {
   render() {
     return (
       <footer>
-        <div className="container">
-          <div className="pull-left">
-            <ul>
+        <div className="container no-limit">
+          <div className="footer-row">
+            <ul className="footer-col">
               <li>
                 <a href="/">Join Us</a>
               </li>
@@ -21,7 +21,7 @@ class Footer extends Component {
                 <a href="/">Privacy Policy</a>
               </li>
             </ul>
-            <ul>
+            <ul className="footer-col">
               <li>
                 <a href="/">Press Kit</a>
               </li>
@@ -29,14 +29,17 @@ class Footer extends Component {
                 <a href="/">Blog</a>
               </li>
             </ul>
+            <div className="spread-between" />
+            <div className="footer-col social-links">
+              <h6>Follow Us!</h6>
+              <img src={require("../../images/footer/twitter.png")} />
+              <img src={require("../../images/footer/fb.png")} />
+              <img src={require("../../images/footer/yt.png")} />
+            </div>
           </div>
-
-          <div className="pull-right">
-            <p>Follow Us!</p>
-            <br />
-            <img src={require("../../images/footer/twitter.png")} />
-            <img src={require("../../images/footer/fb.png")} />
-            <img src={require("../../images/footer/yt.png")} />
+          <div className="copyright-line">
+            Copywright © {new Date().getFullYear()} LumiereVR Co All rights
+            reserved
           </div>
         </div>
       </footer>
