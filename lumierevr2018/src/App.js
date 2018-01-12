@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-import "./assets/css/default.min.css";
+import "./assets/scss/default.css";
 
 import Header from "./components/headerComponent/header.jsx";
 import Homepage from "./pages/homePage";
-import Distribute from "./pages/distribute";
+import Distribute from "./pages/DistributePage/DistributePage";
 import Footer from "./components/footerComponent/footer.jsx";
 
 class App extends Component {
