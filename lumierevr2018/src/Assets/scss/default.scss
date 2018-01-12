@@ -1,4 +1,5 @@
 @import "_config.scss"; /*--use this if we create config.scss where there can be variables for colour and mixins for transitions*/
+@import "./skeleton.scss";
 * {
   padding: 0;
   margin: 0;
@@ -7,20 +8,20 @@
 @font-face {
   font-family: "brandon-grotesque";
   font-style: regular;
-  src: url("Brandon_reg.otf") format("opentype");
+  src: url("../fonts/Brandon_reg.otf") format("opentype");
 }
 
 @font-face {
   font-family: "brandon-grotesque";
   font-weight: bold;
-  src: url("Brandon_bld.otf") format("opentype");
+  src: url("../fonts/Brandon_bld.otf") format("opentype");
 }
 
 @font-face {
   font-family: "brandon-grotesque";
   font-style: italic;
   font-weight: 500;
-  src: url("Brandon_bld_it.otf") format("opentype");
+  src: url("../fonts/Brandon_bld_it.otf") format("opentype");
 }
 
 hr {
