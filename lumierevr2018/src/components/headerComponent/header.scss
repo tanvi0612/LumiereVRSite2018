@@ -1,9 +1,9 @@
+@import "../../assets/scss/_functions.scss";
 nav {
   position: relative;
   display: block;
   width: 100%;
-  background: black;
-  opacity: 0.8;
+  background: transparentize(black, 0.2);
   color: white;
   font-size: 20px;
   .tabs-wrap {
@@ -45,6 +45,75 @@ nav {
         line-height: normal;
         color: white;
       }
+    }
+  }
+  .sidebar-trigger {
+    display: none;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    margin: 0;
+    z-index: 15;
+    .bar {
+      background: white;
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      transition: all 0.3s ease-in-out;
+      top: calc(50% - 1px);
+      &:nth-child(2) {
+        transform: scaleX(0.6);
+      }
+      &:first-child {
+        transform: translateY(-10px);
+      }
+      &:last-child {
+        transform: translateY(10px);
+      }
+    }
+    &.opened {
+      position: fixed;
+      right: 3.5rem;
+      top: 2.7rem;
+      .bar {
+        background: transparentize(black, 0.2);
+        &:nth-child(2) {
+          opacity: 0;
+          width: 0;
+        }
+        &:last-child {
+          transform: rotateZ(45deg);
+        }
+        &:first-child {
+          transform: rotateZ(-45deg);
+        }
+      }
+    }
+  }
+  .side-bar {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: calc(100% - 8rem);
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+    padding: 6rem 4rem;
+    z-index: 10;
+    ul {
+      list-style: none;
+    }
+    &.opened {
+      left: 0%;
+    }
+  }
+
+  @include mobile-lg {
+    .desktop {
+      display: none;
+    }
+    .sidebar-trigger {
+      display: block;
     }
   }
 }
