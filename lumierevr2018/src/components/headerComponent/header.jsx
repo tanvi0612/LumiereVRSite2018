@@ -24,7 +24,7 @@ export default () => {
                 <Link to="/">Contacts</Link>
               </li>
               <li className="last">
-                <Link to="/">Join</Link>
+                <Link to="/careers">Join</Link>
               </li>
             </ul>
           </div>
