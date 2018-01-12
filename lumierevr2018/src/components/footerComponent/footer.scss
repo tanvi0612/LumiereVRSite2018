@@ -1,7 +1,11 @@
+@import "../../assets/scss/_functions.scss";
 footer {
   background: black;
   color: transparentize(white, 0.6);
   padding: 25px;
+  @include mobile-lg {
+    padding: 2rem 0;
+  }
 
   .footer-row {
     display: flex;
@@ -12,6 +16,9 @@ footer {
     }
   }
   .social-links {
+    @include mobile-lg {
+      text-align: center;
+    }
     h6 {
       text-align: center;
     }
@@ -38,5 +45,8 @@ footer {
   }
   .copyright-line {
     font-size: 1.2rem;
+    @include mobile-lg {
+      margin-top: 2rem;
+    }
   }
 }
