@@ -4,26 +4,57 @@
 	margin: 0;
 }
 
-html, body {
-	height: 100%;
-}
+	body {
+	font-family: brandon-grotesque;
+	}
+
+	@font-face{
+		font-family: "brandon-grotesque";
+	    font-style: regular;
+	    src: url('Brandon_reg.otf')	format('opentype');
+	}  
+
+	@font-face{
+		font-family: "brandon-grotesque";
+	    font-weight: bold;
+	    src: url('Brandon_bld.otf')	format('opentype');
+	}  
+
+	@font-face{
+		font-family: "brandon-grotesque";
+		font-style: italic;
+	    font-weight: 500;
+	    src: url('Brandon_bld_it.otf')	format('opentype');
+	}  
+
+	hr {
+		background-color:#000;
+		text-align: center; margin: 0 auto; 
+		color: black;
+		width: 60%;
+		margin-top: 50px;
+	}
+ 
+ 
 header{
 	position: relative;
 	display: block;
 	width: 100%;
 	background: black;
+	opacity: 0.8;
 	color: white;
 	height: 90px;
 	font-size: 20px;
-	/*--@font-face{
-		font-family: brandon-grotesque;
-	    font-style: regular;
-	    src: url()*/
 
 	.logo{
 		position: absolute;
-		top: 50%; 
-		left: 15px;
+		left: 25px;
+		width: 200px;
+		height: 200px;
+		top: 20%;
+		img{
+			max-width: 100%;
+		}
 	}
 
 	nav,
@@ -35,7 +66,7 @@ header{
 
 	nav{
 		position: absolute;
-		top: 50%;
+		top: 35%;
 		right: 15px;
 
 		ul li {
@@ -125,6 +156,7 @@ div {
 	}
 
 	.case2TheaterBottomWrapperDiv {
+		padding-bottom: 40px;
 		padding-top: 10px;
 		margin: 0 auto;
 		width: 100%;
@@ -173,10 +205,18 @@ div {
 
 	h1{ 
 		padding-top:25px;
+		font-weight: bold;	
 	}
 
 	h2 {
-		padding: 20px;
+		padding-top: 20px;
+		padding-bottom: 80px;
+		text-align: center;
+
+		&.italics {
+			font-weight: 500;
+			font-style: italic;
+		}
 	}
 
 }
@@ -205,6 +245,7 @@ footer {
 	ul {
 		display: inline-block;
   		list-style-type: none;
+  		padding: 10px;
 	}
 
 	a {

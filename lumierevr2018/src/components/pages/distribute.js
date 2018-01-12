@@ -10,11 +10,11 @@ class Distribute extends Component {
         <p align = "center"> 
         Here are some case studies LumiereVR has undertaken involving the use of stand alone headsets and custom software systems. 
         </p>
-        <hr color= "black"/>
+        <hr/>
         <h1>
         Case 1
         </h1>
-        <h2 align="center"> 
+        <h2 className="italics"> 
           Virtual Reality Microtheaters
         </h2>
         <div className="case1TheaterWrapperDiv">
@@ -55,13 +55,14 @@ class Distribute extends Component {
             <img className="rowImg" src={require('../../images/theaters/Case1Graph.png')}/>
           </div> 
         </div>
-        <hr color="black" />
+        
+        <hr/>
 
         <h1>
           Case 2
         </h1>
 
-        <h2 align="center"> 
+        <h2 className="italics"> 
           Festival/Conference Pop-Up VR
         </h2>
 
