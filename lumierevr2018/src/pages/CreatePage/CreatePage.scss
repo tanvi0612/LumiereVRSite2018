@@ -1,3 +1,7 @@
+form {
+  margin: 0;
+}
+
 .create-page {
   background: #343434; /*look for colour*/
   text-align: center;
@@ -73,8 +77,8 @@
       width: 30%;
       background-size: 100%;
     }
-  }
-  textarea::-webkit-input-placeholder {
-    color: transparentize(white, 0.4) !important;
+    &::-webkit-input-placeholder {
+      color: transparentize(white, 0.4) !important;
+    }
   }
 }
