@@ -5,6 +5,7 @@
     height: 50%;
     overflow: auto;
     object-fit: cover;
+    padding-left: 10px;
   }
 
   .case1TheaterLeftDiv {
@@ -14,12 +15,12 @@
 
   .case1TheaterRightDiv {
     float: right;
-    width: 67%;
-    padding-left: 25px;
+    width: 65%;
   }
 
   .case1TheaterBottomWrapperDiv {
     padding-top: 10px;
+    padding-left: 10px;
     display: flex;
     flex-direction: row;
     margin: 0 auto;
@@ -43,6 +44,7 @@
   }
 
   .case2TheaterWrapperDiv {
+    padding-left: 10px;
     margin: 0 auto;
     width: 100%;
     height: 50%;
@@ -56,12 +58,13 @@
 
   .case2TheaterRightDiv {
     float: right;
-    width: 67%;
+    width: 65%;
     padding-left: 25px;
   }
 
   .case2TheaterBottomWrapperDiv {
     padding-bottom: 40px;
+    padding-left: 10px;
     padding-top: 10px;
     margin: 0 auto;
     width: 100%;
@@ -88,5 +91,13 @@
     width: 34%;
     max-width: 100%;
     max-height: 100%;
+  }
+
+  p {
+    font-size: 24px;
+  }
+
+  h1 {
+  padding-left: 10px;
   }
 }

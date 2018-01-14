@@ -6,7 +6,7 @@ import "./header.css";
 const renderNavPills = () => (
   <ul>
     <li>
-      <Link to="/"> Create </Link>
+      <Link to="/create"> Create </Link>
     </li>
     <li>
       <Link to="/distribute"> Distribute </Link>

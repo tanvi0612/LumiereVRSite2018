@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-import "./assets/scss/default.css";
+import "./Assets/scss/default.css";
 
 // Global components
 import Header from "./components/headerComponent/header.jsx";
@@ -9,6 +9,7 @@ import Footer from "./components/footerComponent/footer.jsx";
 
 // Pages
 import Homepage from "./pages/homePage";
+import Create from "./pages/CreatePage/CreatePage";
 import Distribute from "./pages/DistributePage/DistributePage";
 import CareerPage from "./pages/CareerPage/CareerPage";
 
@@ -20,8 +21,9 @@ class App extends Component {
           <Header />
 
           <div className="content-wrap">
-            <Route exact path="/" component={Homepage} />
+            <Route exact path="/create" component={Create} />
             <Route exact path="/distribute" component={Distribute} />
+            <Route exact path="/" component={Homepage} />
             <Route exact path="/careers" component={CareerPage} />
           </div>
 

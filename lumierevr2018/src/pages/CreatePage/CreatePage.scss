@@ -1,0 +1,92 @@
+.create-page {
+	background: #343434; /*look for colour*/
+	text-align: center;
+
+	.createWithUsHeaders {
+		display: inline-block;
+		width: 40%;
+		padding-top: 20px;
+		position: relative;
+
+	}
+
+	.productionPhasesContainer {
+		text-align:center;
+		margin: 0 auto;
+		display: block;
+		width: 70%;
+		padding-top: 100px;
+
+		
+		position: relative;
+
+		.preProductionPhase {
+			/*width: 25%;*/
+			float: left;
+		}
+
+		.productionPhase {
+			/*width: 50%;*/
+			float: left;
+			display: flex;
+	    	align-items: center;
+	    	justify-content: center;
+	    	height: 100%;
+		}
+
+		.postProductionPhase {
+			/*width: 25%;*/
+			float: right;
+		}
+
+	}
+
+	h1 , h2, h3, h5, p {
+		color: white;
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	li {
+
+		img {
+			height: 130px;
+			width: 180px;
+		}
+	}
+
+	p {
+		font-size: 20px;
+	}
+
+	.preProductionContent {
+		text-align: left;
+
+	}
+
+	img {
+		object-fit: contain;
+	}
+
+
+	textarea, input {
+		background: #343434;
+		font-size: 20px;
+		font-family:brandon-grotesque;
+		margin-bottom: 25px;
+		padding: 10px;
+	
+
+		.button {
+			display: block;
+    		margin-left: auto;
+    		margin-right: auto;
+			height: 10px;
+			width: 30%;
+			background-size: 100%;
+		}
+
+	}
+}
