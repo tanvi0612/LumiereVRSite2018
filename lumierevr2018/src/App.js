@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-import "./assets/scss/default.css";
+import "./Assets/scss/default.css";
 
 // Global components
 import Header from "./components/headerComponent/header.jsx";

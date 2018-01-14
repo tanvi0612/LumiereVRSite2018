@@ -38,7 +38,7 @@ export default class Navbar extends Component {
         <div className="container no-limit">
           <div className="tabs-wrap">
             <Link to="/" className="logo">
-              <img src={require("../../images/header/logo.png")} />
+              <img src={require("../../images/header/LogoForNav.png")} />
             </Link>
 
             <div className="nav-pills desktop">{renderNavPills()}</div>
