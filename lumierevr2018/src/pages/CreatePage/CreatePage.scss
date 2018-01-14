@@ -1,92 +1,80 @@
 .create-page {
-	background: #343434; /*look for colour*/
-	text-align: center;
+  background: #343434; /*look for colour*/
+  text-align: center;
+  color: white;
 
-	.createWithUsHeaders {
-		display: inline-block;
-		width: 40%;
-		padding-top: 20px;
-		position: relative;
+  .createWithUsHeaders {
+    display: inline-block;
+    width: 40%;
+    padding-top: 20px;
+    position: relative;
+  }
 
-	}
+  .productionPhasesContainer {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 70%;
+    padding-top: 100px;
+    position: relative;
+    .preProductionPhase {
+      float: left;
+    }
 
-	.productionPhasesContainer {
-		text-align:center;
-		margin: 0 auto;
-		display: block;
-		width: 70%;
-		padding-top: 100px;
+    .productionPhase {
+      float: left;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
 
-		
-		position: relative;
+    .postProductionPhase {
+      float: right;
+    }
+  }
 
-		.preProductionPhase {
-			/*width: 25%;*/
-			float: left;
-		}
+  ul {
+    list-style: none;
+  }
 
-		.productionPhase {
-			/*width: 50%;*/
-			float: left;
-			display: flex;
-	    	align-items: center;
-	    	justify-content: center;
-	    	height: 100%;
-		}
+  li {
+    img {
+      height: 130px;
+      width: 180px;
+    }
+  }
 
-		.postProductionPhase {
-			/*width: 25%;*/
-			float: right;
-		}
+  p {
+    font-size: 20px;
+  }
 
-	}
+  .preProductionContent {
+    text-align: left;
+  }
 
-	h1 , h2, h3, h5, p {
-		color: white;
-	}
+  img {
+    object-fit: contain;
+  }
 
-	ul {
-		list-style: none;
-	}
-
-	li {
-
-		img {
-			height: 130px;
-			width: 180px;
-		}
-	}
-
-	p {
-		font-size: 20px;
-	}
-
-	.preProductionContent {
-		text-align: left;
-
-	}
-
-	img {
-		object-fit: contain;
-	}
-
-
-	textarea, input {
-		background: #343434;
-		font-size: 20px;
-		font-family:brandon-grotesque;
-		margin-bottom: 25px;
-		padding: 10px;
-	
-
-		.button {
-			display: block;
-    		margin-left: auto;
-    		margin-right: auto;
-			height: 10px;
-			width: 30%;
-			background-size: 100%;
-		}
-
-	}
+  textarea,
+  input {
+    background: #343434;
+    font-size: 20px;
+    font-family: brandon-grotesque;
+    margin-bottom: 25px;
+    padding: 10px;
+    color: white;
+    &.button {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 10px;
+      width: 30%;
+      background-size: 100%;
+    }
+  }
+  textarea::-webkit-input-placeholder {
+    color: transparentize(white, 0.4) !important;
+  }
 }
