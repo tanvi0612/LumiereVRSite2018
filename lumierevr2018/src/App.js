@@ -8,7 +8,7 @@ import Header from "./components/headerComponent/header.jsx";
 import Footer from "./components/footerComponent/footer.jsx";
 
 // Pages
-import Homepage from "./pages/homePage";
+import Homepage from "./pages/HomePage/HomePage.jsx";
 import Create from "./pages/CreatePage/CreatePage";
 import Distribute from "./pages/DistributePage/DistributePage";
 import CareerPage from "./pages/CareerPage/CareerPage";
