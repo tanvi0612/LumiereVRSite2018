@@ -1,11 +1,15 @@
 @import "../../assets/scss/_functions.scss";
 nav {
-  position: relative;
+  position: fixed;
+  z-index: 1;
   display: block;
   width: 100%;
   background: transparentize(black, 0.2);
   color: white;
   font-size: 20px;
+  @include mobile-lg {
+    position: relative;
+  }
   .tabs-wrap {
     height: 90px;
     display: flex;
