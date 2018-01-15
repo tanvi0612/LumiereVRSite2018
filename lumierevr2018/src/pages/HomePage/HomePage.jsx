@@ -6,9 +6,22 @@ class Homepage extends Component {
   render() {
     return (
       <div className="homepage page">
-        <section className="splash-screen">
+        <section className="splash-screen first-section">
+          <video
+            poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg"
+            id="bgvid"
+            playsInline
+            autoPlay
+            muted
+            loop
+          >
+            <source
+              src={require("../../images/HomePage/OldMan.mp4")}
+              type="video/mp4"
+            />
+          </video>
           <div className="container">
-            <div className="four columns">
+            <div className="five columns">
               <h3>Create Immersive Experience</h3>
               <p>
                 As the medium for the content continue to evolve, Virtual Realty

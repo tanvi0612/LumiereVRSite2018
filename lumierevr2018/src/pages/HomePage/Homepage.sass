@@ -1,5 +1,22 @@
 .homepage
     .splash-screen
-        background: url()
         color: white
-        min-height: 100vh
+        position: relative
+        width: 100vw
+        overflow: hidden
+        display: flex
+        align-items: center
+
+        video
+            position: absolute
+            height: 100%
+            width: 100%
+            object-fit: cover
+            top: 0
+            left: 0
+        p
+            letter-spacing: 1px
+        button
+            margin: 2rem auto 0 4rem
+            width: 250px
+            font-size: 1.5em
