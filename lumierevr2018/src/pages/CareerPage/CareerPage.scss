@@ -1,7 +1,8 @@
 @import "../../assets/scss/_functions.scss";
 
 .career-page {
-  padding-top: 18vh;
+  display: flex;
+  align-items: center;
   @include mobile-lg {
     padding: 5vh 0;
   }
