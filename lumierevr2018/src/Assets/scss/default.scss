@@ -54,10 +54,9 @@ h1 {
 }
 
 h2 {
-  padding-top: 20px;
-  padding-bottom: 80px;
-  text-align: center;
-
+  // padding-top: 20px;
+  // padding-bottom: 80px;
+  // text-align: center;
   &.italics {
     font-weight: 500;
     font-style: italic;
@@ -94,4 +93,9 @@ button {
   //   background-color: transparentize(white, 0.9);
   //   z-index: 0;
   // }
+}
+
+.first-section {
+  padding-top: 90px;
+  height: calc(100vh - 90px);
 }
