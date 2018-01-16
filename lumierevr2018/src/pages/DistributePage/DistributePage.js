@@ -6,7 +6,7 @@ class Distribute extends Component {
   render() {
     return (
       <div className="distribute-page page">
-        
+        <div className="container no-limits">
           <h1 align="center">Cinematic VR Case Studies</h1>
           <p align="center">
             Here are some case studies LumiereVR has undertaken involving the
@@ -156,7 +156,7 @@ class Distribute extends Component {
             </div>
           </div>
 
-      
+      </div>
 
       </div>
     );
