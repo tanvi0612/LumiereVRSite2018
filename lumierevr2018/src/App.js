@@ -22,7 +22,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      coverRevealed: false
+      coverRevealed: window.location.pathname !== "/"
     };
   }
 

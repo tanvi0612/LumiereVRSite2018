@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 import "./header.css";
 
@@ -45,7 +45,7 @@ export default class Navbar extends Component {
       <nav>
         <div className="container no-limit">
           <div className="tabs-wrap">
-            <NavLink
+            <Link
               to="/"
               onClick={this.props.openLid}
               className={`logo-wrap ${!this.props.coverRevealed
@@ -56,7 +56,7 @@ export default class Navbar extends Component {
                 <img src={require("../../images/header/LogoForNav.png")} />
                 <span>Building the future of storytelling.</span>
               </div>
-            </NavLink>
+            </Link>
 
             <div className="nav-pills desktop">{this.renderNavPills()}</div>
 
