@@ -5,7 +5,8 @@ import "./TermsAndConditionsPage.css";
 class TermsAndConditionsPage extends Component {
   render() {
     return (
-      <div className = "tandcpage-container">
+      <div className = "tandc-page page">
+	    <div className = "container no-limits">
 	      <h2> WEBSITE STANDARD TERMS AND CONDITIONS TEMPLATE </h2>
 
 	      <ol>
@@ -147,6 +148,7 @@ class TermsAndConditionsPage extends Component {
 				</p>
 			</li>
 		</ol>
+	  </div>
       </div>
     );
   }
