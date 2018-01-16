@@ -5,6 +5,8 @@
   align-items: center;
   @include mobile-lg {
     padding: 5vh 0;
+    min-height: 100vh;
+    height: fit-content;
   }
   h3 {
     text-align: center;
