@@ -26,6 +26,9 @@ nav {
     left: 0%;
     transform: translateY(-50%) translateX(0%);
     transition: all 0.5s ease-in-out;
+    @include mobile-lg {
+      max-width: 95vw;
+    }
     .logo {
       height: 90px;
       min-height: 100%;
@@ -70,7 +73,7 @@ nav {
         }
       }
       @include mobile-lg {
-        max-width: 100%;
+        max-width: 95vw;
         transform: translateY(-50%) translateX(-59%);
       }
     }
