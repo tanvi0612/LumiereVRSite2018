@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Router, Route, Link } from "react-router-dom";
+import { createBrowserHistory } from "history";
 
 import "./styles/default.css";
 
@@ -14,6 +15,8 @@ import Create from "./pages/CreatePage/CreatePage";
 import Distribute from "./pages/DistributePage/DistributePage";
 import CareerPage from "./pages/CareerPage/CareerPage";
 
+const history = createBrowserHistory();
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -23,17 +26,23 @@ class App extends Component {
     };
   }
 
+  _openLid = () => this.setState({ coverRevealed: true });
+
   render() {
     return (
-      <Router>
+      <Router history={history}>
         <div
           className={`App ${!this.state.coverRevealed ? `scroll-lock` : ``}`}
         >
-          <Header coverRevealed={this.state.coverRevealed} />
+          <Header
+            coverRevealed={this.state.coverRevealed}
+            openLid={this._openLid}
+            history={history}
+          />
 
           <LandingPage
             coverRevealed={this.state.coverRevealed}
-            openLid={() => this.setState({ coverRevealed: true })}
+            openLid={this._openLid}
           />
 
           {this.state.coverRevealed && (
