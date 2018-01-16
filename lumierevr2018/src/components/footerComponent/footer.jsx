@@ -11,16 +11,16 @@ class Footer extends Component {
           <div className="footer-row">
             <ul className="footer-col">
               <li>
-                 <Link to="/careers">Join Us</Link>
+                 <NavLink to="/careers">Join Us</NavLink>
               </li>
               <li>
                 <a href="/">Contact Us</a>
               </li>
               <li>
-                <Link to="/TermsAndConditions">Terms and Conditions</Link>
+                <NavLink to="/TermsAndConditions">Terms and Conditions</NavLink>
               </li>
               <li>
-                <Link to="/PrivacyPolicy">Privacy Policy</Link>
+                <NavLink to="/PrivacyPolicy">Privacy Policy</NavLink>
               </li>
             </ul>
             <ul className="footer-col">
@@ -28,7 +28,7 @@ class Footer extends Component {
                 <a href="/">Press Kit</a>
               </li>
               <li>
-                <a href="/">Blog</a>
+                <a href="https://medium.com/@traviswu">Blog</a>
               </li>
             </ul>
             <div className="spread-between" />
