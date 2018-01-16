@@ -1,0 +1,64 @@
+@import "../../assets/scss/_functions.scss";
+
+.timer {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  max-width: 70%;
+  margin: 0 auto;
+  @include mobile-lg {
+    max-width: 100%;
+    justify-content: space-between;
+  }
+}
+.timer p {
+  min-width: 100px;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 67px;
+  border: 0px;
+  border-radius: 10px;
+}
+.time {
+  font-size: 5rem;
+  background-color: transparentize(#8e264f, 0.4);
+  padding: 2rem;
+  line-height: 6rem;
+  margin-bottom: 1rem;
+  @include mobile-lg {
+    font-size: 4rem;
+    line-height: 4rem;
+    padding: 1rem;
+  }
+  @include mobile-md {
+    font-size: 3rem;
+  }
+}
+.label {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  min-width: inherit;
+  letter-spacing: 1px;
+}
+.section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: transparentize(#eac0d0, 0.45);
+  padding: 2rem;
+  margin: 0 0.5rem;
+  @include mobile-lg {
+    min-width: 50px;
+    min-height: 4rem;
+    padding: 1rem;
+  }
+  @include mobile-sm {
+    padding: 2rem 0;
+  }
+}
