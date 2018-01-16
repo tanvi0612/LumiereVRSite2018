@@ -15,11 +15,14 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
   }
   .logo {
     max-width: 200px;
     height: auto;
-    margin: 1rem 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     img {
       max-width: 100%;
     }
@@ -32,7 +35,7 @@ nav {
   }
 
   .nav-pills {
-    width: 50vw;
+    width: 100%;
     margin: 1rem 0;
     display: flex;
     justify-content: flex-end;
