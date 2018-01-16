@@ -5,7 +5,8 @@ import "./PrivacyPolicyPage.css";
 class PrivacyPolicyPage extends Component {
   render() {
     return (
-      <div className = "privacypolicypage-container">
+      <div className = "policy-page page">
+        <div className = "container no-limits">
         <h4>  LumiereVR Co PRIVACY POLICY </h4>
 
         <p>
@@ -171,7 +172,7 @@ class PrivacyPolicyPage extends Component {
             </p>
 
           <b>Last Updated:</b> This Privacy Policy was last updated on Nov 6 2017.  
-           
+         </div>  
       </div>
     );
   }
