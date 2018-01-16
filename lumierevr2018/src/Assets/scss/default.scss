@@ -81,18 +81,8 @@ button {
   box-shadow: 0 0 20px 2px #0ff;
   letter-spacing: 1px;
   min-width: 15rem;
-  // &:before {
-  //   content: "";
-  //   display: block;
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   height: 100%;
-  //   width: 100%;
-  //   filter: blur(3px);
-  //   background-color: transparentize(white, 0.9);
-  //   z-index: 0;
-  // }
+  width: 250px;
+  font-size: 1.5em;
 }
 
 .first-section {
