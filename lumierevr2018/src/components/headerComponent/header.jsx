@@ -43,14 +43,18 @@ export default class Navbar extends Component {
 
             <div className="nav-pills desktop">{renderNavPills()}</div>
 
-            <div
-            className={`sidebar-trigger ${this.state.sidebarOpen ? `opened` : ``}`}
-             onClick={this._toggleSidebar}>
-              <div className="bar" />
-              <div className="bar" />
-              <div className="bar" />
+            <div className="sidebar-trigger-wrap">
+              <div
+                className={`sidebar-trigger ${this.state.sidebarOpen
+                  ? `opened`
+                  : ``}`}
+                onClick={this._toggleSidebar}
+              >
+                <div className="bar" />
+                <div className="bar" />
+                <div className="bar" />
+              </div>
             </div>
-
             <div
               className={`side-bar ${this.state.sidebarOpen ? `opened` : ``}`}
             >
