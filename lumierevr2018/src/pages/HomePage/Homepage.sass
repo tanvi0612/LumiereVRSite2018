@@ -1,0 +1,132 @@
+@import '../../assets/scss/_functions.scss'
+
+.homepage
+    .splash-screen
+        color: white
+        position: relative
+        width: 100vw
+        overflow: hidden
+        display: flex
+        align-items: center
+        @include mobile-lg
+            padding-top: 0
+            text-align: center
+            p, h3
+                text-align: left
+        video
+            position: absolute
+            height: 100%
+            width: 100%
+            object-fit: cover
+            top: 0
+            left: 0
+            z-index: -1
+        &:before
+            content: ''
+            display: block
+            position: absolute
+            top: 0
+            left: 0
+            height: 100%
+            width: 100%
+            background: transparentize( black , .6 )
+        p
+            letter-spacing: 1px
+        button
+            margin: 2rem auto 0
+    .victoria-section
+        height: 85vh
+        background: url('../../images/HomePage/VictoriaBackround.png') center
+        background-size: cover
+        color: white
+        padding: 4rem 0
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 50vh
+        .timer-wrap
+            width: 95%
+        h2
+            text-align: center
+            letter-spacing: 7px
+            margin-bottom: 4rem
+            // margin-top: 130px
+    .vr-theatre-section
+        display: flex
+        position: relative
+        width: 100vw
+        max-height: 570px
+        .background-img
+            flex: 1
+            width: 60vw
+            object-fit: cover
+            filter: brightness(.4)
+            @include mobile-lg
+                position: absolute
+                height: 100%
+                width: 100%
+        .tablet-img
+            position: absolute
+            bottom: 0
+            left: 0
+            height: 65%
+            width: calc(60vw + 100px)
+            object-fit: contain
+            max-width: fit-content
+            object-position: bottom right
+            @include mobile-lg
+                display: none
+        .details
+            width: 40vw
+            padding: 5rem 0
+            color: white
+            background-color: transparentize(black, .2)
+            @include mobile-lg
+                width: 100%
+                background-color: transparent
+                text-align: center
+            button
+                margin: 4rem auto 0
+                display: block
+            img.retinad-logo
+                max-width: 150px
+                display: block
+                margin-left: auto
+                @include mobile-lg
+                    display: none
+    .find-us-section
+        padding: 5rem 0
+        color: white
+        background: transparentize(black, .4) url('../../images/HomePage/background.png')
+        background-size: cover
+        background-blend-mode: overlay
+        h4
+            text-align: center
+        .address-grid
+            list-style: none
+            display: flex
+            justify-content: space-between
+            li
+                margin: 1rem
+                flex: 1
+                h5
+                    text-align: center
+        form
+            text-align: center
+            input, textarea
+                border: 2px solid white
+                padding: 1rem 1.5rem
+                font-size: 1.2em
+                width: 80%
+                margin: .5rem auto
+                background: transparent
+                &::-webkit-input-placeholder
+                    color: transparentize(white, 0.4) !important
+                    letter-spacing: 1px
+                    font-family: brandon-grotesque !important
+                @include mobile-lg
+                    width: 90%
+            button
+                margin: 3rem auto 0
+
+

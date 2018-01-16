@@ -7,7 +7,7 @@ export default class CareerPage extends Component {
   _handleSubmit = () => {};
   render() {
     return (
-      <div className="career-page page">
+      <div className="career-page page first-section">
         <div className="container">
           <h3>Choose Your Path</h3>
           <div className="path-container">
