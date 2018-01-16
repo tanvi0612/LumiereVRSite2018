@@ -1,4 +1,7 @@
+@import "../../Assets/scss/_functions.scss";
+
 .distribute-page {
+  
   .case1TheaterWrapperDiv {
     margin: 0 auto;
     width: 100%;
@@ -6,16 +9,33 @@
     overflow: auto;
     object-fit: cover;
     padding-left: 10px;
-  }
+    
+
+    @include mobile-lg {
+      justify-content: space-around;
+      align-items: center;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+   }
 
   .case1TheaterLeftDiv {
     float: left;
     width: 33%;
+    
+    @include mobile-lg {
+      justify-content: space-around;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+    }
   }
 
   .case1TheaterRightDiv {
     float: right;
     width: 65%;
+ 
   }
 
   .case1TheaterBottomWrapperDiv {
@@ -27,7 +47,12 @@
     width: 100%;
     overflow: auto;
     object-fit: cover;
-  }
+
+     @include mobile-lg {
+      display: none !important;
+      }
+    }
+  
 
   .case1TheaterBottomLeftDiv {
     float: left;
@@ -49,6 +74,13 @@
     width: 100%;
     height: 50%;
     overflow: auto;
+
+     @include mobile-lg {
+      justify-content: space-around;
+      align-items: center;
+      display: flex;
+      flex-direction: column-reverse;
+    }
   }
 
   .case2TheaterLeftDiv {
@@ -59,7 +91,7 @@
   .case2TheaterRightDiv {
     float: right;
     width: 65%;
-    padding-left: 25px;
+    padding-left: 20px;
   }
 
   .case2TheaterBottomWrapperDiv {
@@ -70,6 +102,14 @@
     width: 100%;
     overflow: auto;
     margin-bottom: 25px;
+
+    @include mobile-lg {
+      justify-content: space-around;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      
+    }
   }
 
   .case2TheaterBottomLeftDiv {
@@ -94,7 +134,7 @@
   }
 
   p {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   h1 {

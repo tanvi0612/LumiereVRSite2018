@@ -1,0 +1,19 @@
+@import "../../Assets/scss/_functions.scss";
+
+.privacypolicypage-container{
+	
+	padding: 5%;
+	font-size: 20px;
+
+	@include mobile-lg {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+	
+	ul, ol {
+		list-style-position: inside;
+	}
+
+}
