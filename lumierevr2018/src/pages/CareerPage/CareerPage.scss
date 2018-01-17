@@ -5,7 +5,7 @@
   align-items: center;
   height: calc(100vh - 90px);
   @include mobile-lg {
-    padding: 5vh 0;
+    padding: calc(90px + 5rem) 0 5rem;
     min-height: 100vh;
     height: fit-content;
   }
