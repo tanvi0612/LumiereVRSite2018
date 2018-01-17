@@ -12,53 +12,27 @@ form {
     display: block;
     margin: 2rem auto;
   }
-  .createWithUsHeaders {
-    display: inline-block;
-    width: 40%;
-    padding-top: 20px;
-    position: relative;
-  }
 
-  .productionPhasesContainer {
+  .head-image-grid {
     text-align: center;
     margin: 0 auto;
     display: block;
     width: 70%;
-    padding-top: 100px;
-    position: relative;
-    .preProductionPhase {
-      float: left;
-    }
-
-    .productionPhase {
-      float: left;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-    }
-
-    .postProductionPhase {
-      float: right;
-    }
-  }
-
-  ul {
-    list-style: none;
-  }
-
-  li {
-    img {
-      height: 130px;
-      width: 180px;
+    .card {
+      text-align: center;
+      img {
+        width: 200px;
+        height: 200px;
+      }
+      > * {
+        display: block;
+        margin: 0 auto;
+      }
     }
   }
 
   p {
     font-size: 20px;
-  }
-
-  .preProductionContent {
     text-align: left;
   }
 
@@ -82,5 +56,8 @@ form {
       width: 30%;
       background-size: 100%;
     }
+  }
+  button {
+    margin: 50px 0 100px;
   }
 }
