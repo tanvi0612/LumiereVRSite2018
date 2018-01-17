@@ -64,6 +64,7 @@ button {
   width: 250px;
   font-size: 1.5em;
   max-width: 90%;
+  font-family: "Brandon Grotesque", sans-serif;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   &:hover {
@@ -86,6 +87,9 @@ button {
 
 .first-section {
   padding-top: 90px;
+  @include mobile-lg {
+    padding-top: 1rem;
+  }
 }
 
 .landing-page {
