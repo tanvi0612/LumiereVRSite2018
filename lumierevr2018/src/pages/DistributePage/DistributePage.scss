@@ -18,6 +18,24 @@
       margin-bottom: 5rem;
     }
   }
+
+  .colImg {
+    margin: -4px 0;
+  }
+
+  .image-wrap {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    @include mobile-lg {
+      flex-direction: column;
+    }
+    > img {
+      flex: 1;
+      height: 200px;
+      object-fit: cover;
+    }
+  }
   .case1TheaterWrapperDiv {
     margin: 0 auto;
     width: 100%;

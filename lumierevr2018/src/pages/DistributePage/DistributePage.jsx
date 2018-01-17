@@ -23,8 +23,8 @@ class Distribute extends Component {
           <div className="container">
             <h2>Case 1</h2>
             <h1 className="italics">Virtual Reality Microtheaters</h1>
-            <div className="case1TheaterWrapperDiv">
-              <div className="case1TheaterLeftDiv">
+            <div className="row">
+              <div className="six columns">
                 <img
                   id="Case1TheaterRender"
                   className="colImg"
@@ -37,7 +37,7 @@ class Distribute extends Component {
                   src={require("../../images/theaters/Case1TheaterDemo.png")}
                 />
               </div>
-              <div className="case1TheaterRightDiv">
+              <div className="six columns">
                 <p>
                   Partnering with the creators of The Click Effect as well as
                   Zoos, Aquariums, and Museums we use a syncronized system of
@@ -103,8 +103,8 @@ class Distribute extends Component {
 
             <h1 className="italics">Festival/Conference Pop-Up VR</h1>
 
-            <div className="case2TheaterWrapperDiv">
-              <div className="case2TheaterLeftDiv">
+            <div className="row">
+              <div className="six columns">
                 <img
                   className="colImg"
                   src={require("../../images/theaters/Case2TheaterDemo.png")}
@@ -115,7 +115,7 @@ class Distribute extends Component {
                 />
               </div>
 
-              <div className="case2TheaterRightDiv">
+              <div className="six columns">
                 <p>
                   As a service to VR/Tech Conferences or Film Festivals, we’ve
                   designed two software options instead of syncronous playback
@@ -149,27 +149,14 @@ class Distribute extends Component {
               </div>
             </div>
 
-            <div className="case2TheaterBottomWrapperDiv">
-              <div className="case2TheaterBottomLeftDiv ">
-                <img
-                  className="rowImg"
-                  src={require("../../images/theaters/Case2SitdownParty.png")}
-                />
-              </div>
+            <div className="image-wrap">
+              <img
+                src={require("../../images/theaters/Case2SitdownParty.png")}
+              />
 
-              <div className="case2TheaterBottomMidDiv ">
-                <img
-                  className="rowImg"
-                  src={require("../../images/theaters/Case2Lounge.png")}
-                />
-              </div>
+              <img src={require("../../images/theaters/Case2Lounge.png")} />
 
-              <div className="case2TheaterBottomRightDiv ">
-                <img
-                  className="rowImg"
-                  src={require("../../images/theaters/Case2Badge.png")}
-                />
-              </div>
+              <img src={require("../../images/theaters/Case2Badge.png")} />
             </div>
           </div>
         </div>
