@@ -24,7 +24,7 @@ class Distribute extends Component {
             <h2>Case 1</h2>
             <h1 className="italics">Virtual Reality Microtheaters</h1>
             <div className="row">
-              <div className="six columns">
+              <div className="five columns">
                 <img
                   id="Case1TheaterRender"
                   className="colImg"
@@ -37,7 +37,7 @@ class Distribute extends Component {
                   src={require("../../images/theaters/Case1TheaterDemo.png")}
                 />
               </div>
-              <div className="six columns">
+              <div className="seven columns">
                 <p>
                   Partnering with the creators of The Click Effect as well as
                   Zoos, Aquariums, and Museums we use a syncronized system of
@@ -104,7 +104,7 @@ class Distribute extends Component {
             <h1 className="italics">Festival/Conference Pop-Up VR</h1>
 
             <div className="row">
-              <div className="six columns">
+              <div className="five columns">
                 <img
                   className="colImg"
                   src={require("../../images/theaters/Case2TheaterDemo.png")}
@@ -115,7 +115,7 @@ class Distribute extends Component {
                 />
               </div>
 
-              <div className="six columns">
+              <div className="seven columns">
                 <p>
                   As a service to VR/Tech Conferences or Film Festivals, we’ve
                   designed two software options instead of syncronous playback
