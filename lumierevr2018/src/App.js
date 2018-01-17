@@ -11,7 +11,7 @@ import LandingPage from "./components/LandingPage/LandingPage";
 
 // Pages
 import Homepage from "./pages/HomePage/HomePage.jsx";
-import Create from "./pages/CreatePage/CreatePage";
+import Create from "./pages/CreatePage/CreatePage.jsx";
 import Distribute from "./pages/DistributePage/DistributePage.jsx";
 import CareerPage from "./pages/CareerPage/CareerPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage/PrivacyPolicyPage";
