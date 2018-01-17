@@ -49,9 +49,9 @@ class App extends Component {
 
           {this.state.coverRevealed && (
             <div className="content-wrap">
+              <Route exact path="/" component={Homepage} />
               <Route exact path="/create" component={Create} />
               <Route exact path="/distribute" component={Distribute} />
-              <Route exact path="/" component={Homepage} />
               <Route
                 exact
                 path="/TermsAndConditions"
