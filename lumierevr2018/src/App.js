@@ -12,11 +12,10 @@ import LandingPage from "./components/LandingPage/LandingPage";
 // Pages
 import Homepage from "./pages/HomePage/HomePage.jsx";
 import Create from "./pages/CreatePage/CreatePage";
-import Distribute from "./pages/DistributePage/DistributePage";
+import Distribute from "./pages/DistributePage/DistributePage.jsx";
 import CareerPage from "./pages/CareerPage/CareerPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage/PrivacyPolicyPage";
 import TermsAndConditionsPage from "./pages/TermsAndConditionsPage/TermsAndConditionsPage";
-
 
 const history = createBrowserHistory();
 
@@ -33,7 +32,6 @@ class App extends Component {
 
   render() {
     return (
-
       <Router history={history}>
         <div
           className={`App ${!this.state.coverRevealed ? `scroll-lock` : ``}`}
@@ -51,12 +49,20 @@ class App extends Component {
 
           {this.state.coverRevealed && (
             <div className="content-wrap">
-            <Route exact path="/create" component={Create} />
-            <Route exact path="/distribute" component={Distribute} />
-            <Route exact path="/" component={Homepage} />
-             <Route exact path="/TermsAndConditions" component={TermsAndConditionsPage} />
-            <Route exact path="/PrivacyPolicy" component={PrivacyPolicyPage} />
-            <Route exact path="/careers" component={CareerPage} />
+              <Route exact path="/create" component={Create} />
+              <Route exact path="/distribute" component={Distribute} />
+              <Route exact path="/" component={Homepage} />
+              <Route
+                exact
+                path="/TermsAndConditions"
+                component={TermsAndConditionsPage}
+              />
+              <Route
+                exact
+                path="/PrivacyPolicy"
+                component={PrivacyPolicyPage}
+              />
+              <Route exact path="/careers" component={CareerPage} />
             </div>
           )}
 
