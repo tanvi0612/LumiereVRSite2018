@@ -6,7 +6,7 @@ class Distribute extends Component {
   render() {
     return (
       <div className="distribute-page page">
-        <div className="container-fluid">
+        <div className="container no-limits">
           <h1 align="center">Cinematic VR Case Studies</h1>
           <p align="center">
             Here are some case studies LumiereVR has undertaken involving the
@@ -17,14 +17,16 @@ class Distribute extends Component {
           <h2 className="italics">Virtual Reality Microtheaters</h2>
           <div className="case1TheaterWrapperDiv">
             <div className="case1TheaterLeftDiv">
-              <img
-                className="colImg"
-                src={require("../../images/theaters/Case1TheaterRender.png")}
-              />
-              <img
+                 <img id= "Case1TheaterRender"
+                  className="colImg"
+                  src={require("../../images/theaters/Case1TheaterRender.png")}
+                  />
+                
+              <img id= "Case1TheaterDemo"
                 className="colImg"
                 src={require("../../images/theaters/Case1TheaterDemo.png")}
               />
+
             </div>
             <div className="case1TheaterRightDiv">
               <p>
@@ -66,13 +68,13 @@ class Distribute extends Component {
 
           <div className="case1TheaterBottomWrapperDiv">
             <div className="case1TheaterBottomLeftDiv">
-              <img
+              <img id = "Case1Heatmap"
                 className="rowImg"
                 src={require("../../images/theaters/Case1Heatmap.png")}
               />
             </div>
             <div className="case1TheaterBottomRightDiv">
-              <img
+              <img id="Case1Graph"
                 className="rowImg"
                 src={require("../../images/theaters/Case1Graph.png")}
               />
@@ -153,7 +155,9 @@ class Distribute extends Component {
               />
             </div>
           </div>
-        </div>
+
+      </div>
+
       </div>
     );
   }
