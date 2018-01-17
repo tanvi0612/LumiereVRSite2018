@@ -8,9 +8,6 @@ nav {
   color: white;
   font-size: 20px;
   z-index: 12;
-  @include mobile-lg {
-    position: relative;
-  }
   .tabs-wrap {
     height: 90px;
     display: flex;
