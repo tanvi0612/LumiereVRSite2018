@@ -111,3 +111,28 @@ button {
 .scroll-lock {
   overflow: hidden;
 }
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: transparentize(white, 0.4) !important;
+  letter-spacing: 1px;
+  font-family: "Brandon Grotesque", sans-serif !important;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: transparentize(white, 0.4) !important;
+  letter-spacing: 1px;
+  font-family: "Brandon Grotesque", sans-serif !important;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: transparentize(white, 0.4) !important;
+  letter-spacing: 1px;
+  font-family: "Brandon Grotesque", sans-serif !important;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: transparentize(white, 0.4) !important;
+  letter-spacing: 1px;
+  font-family: "Brandon Grotesque", sans-serif !important;
+}

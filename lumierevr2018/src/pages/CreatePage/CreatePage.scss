@@ -6,6 +6,12 @@ form {
   background: #343434; /*look for colour*/
   text-align: center;
   color: white;
+
+  .image-header {
+    max-width: 500px;
+    display: block;
+    margin: 2rem auto;
+  }
   .createWithUsHeaders {
     display: inline-block;
     width: 40%;
@@ -75,9 +81,6 @@ form {
       height: 10px;
       width: 30%;
       background-size: 100%;
-    }
-    &::-webkit-input-placeholder {
-      color: transparentize(white, 0.4) !important;
     }
   }
 }
