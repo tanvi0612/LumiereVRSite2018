@@ -31,6 +31,10 @@
       margin: 2rem 0;
       overflow: hidden;
     }
+    @include mobile-sm {
+      height: 270px;
+      width: 270px;
+    }
     > img {
       position: absolute;
       top: 0;
@@ -48,6 +52,9 @@
       color: white;
       padding: 1rem 0;
       transition: all 0.3s ease-out;
+      @include mobile-sm {
+        height: 50%;
+      }
       h5 {
         text-align: center;
         margin: 0.5rem;
@@ -60,6 +67,9 @@
         margin-left: auto;
         margin-right: auto;
         width: 60%;
+        @include mobile-sm {
+          width: 75%;
+        }
         li {
           margin: 0 0.5rem;
           transition: all 0.3s ease-in-out;
