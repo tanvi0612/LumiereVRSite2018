@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import "./footer.css";
 
-
 class Footer extends Component {
   render() {
     return (
@@ -11,7 +10,7 @@ class Footer extends Component {
           <div className="footer-row">
             <ul className="footer-col">
               <li>
-                 <NavLink to="/careers">Join Us</NavLink>
+                <NavLink to="/careers">Join Us</NavLink>
               </li>
               <li>
                 <a href="/">Contact Us</a>
@@ -33,13 +32,17 @@ class Footer extends Component {
             </ul>
             <div className="spread-between" />
             <div className="footer-col social-links">
-              <div className="footer-row">
               <h6>Follow Us!</h6>
-              </div>
-              <div className="footer-row">
-              <a href="https://twitter.com/LumiereVR"> <img src={require("../../images/footer/twitter.png")} /> </a>
-              <a href="https://www.facebook.com/lumierevr/"> <img src={require("../../images/footer/fb.png")} /> </a>
-              <a href="https://www.youtube.com/channel/UCDxlErZDH-9cavI6Kp6sf5A"> <img src={require("../../images/footer/yt.png")} /> </a>
+              <div className="social-links-images">
+                <a href="https://twitter.com/LumiereVR">
+                  <img src={require("../../images/footer/twitter.png")} />
+                </a>
+                <a href="https://www.facebook.com/lumierevr/">
+                  <img src={require("../../images/footer/fb.png")} />
+                </a>
+                <a href="https://www.youtube.com/channel/UCDxlErZDH-9cavI6Kp6sf5A">
+                  <img src={require("../../images/footer/yt.png")} />
+                </a>
               </div>
             </div>
           </div>

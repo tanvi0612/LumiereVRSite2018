@@ -29,14 +29,28 @@ footer {
       margin: 0.5rem;
       display: block;
     }
+    .social-links-images {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include mobile-lg {
+        flex-direction: column;
+      }
+    }
   }
-  ul {
+  .footer-col {
     display: block;
     list-style-type: none;
     padding: 10px 20px 10px 0;
     margin: 0 3rem 1.5rem 0;
+    @include mobile-lg {
+      padding: 10px 0;
+    }
     li {
       margin-bottom: 0.2rem;
+      @include mobile-lg {
+        margin-bottom: 1rem;
+      }
     }
   }
 
