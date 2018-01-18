@@ -26,6 +26,8 @@
   background-color: transparentize(#8e264f, 0.4);
   padding: 2rem;
   line-height: 6rem;
+  width: 1.5em;
+  text-align: center;
   margin-bottom: 1rem;
   @include mobile-lg {
     font-size: 4rem;
