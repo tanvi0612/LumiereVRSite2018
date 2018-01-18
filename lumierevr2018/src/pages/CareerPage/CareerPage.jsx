@@ -36,8 +36,9 @@ export default class CareerPage extends Component {
         <div className="container">
           <h3>Choose Your Path</h3>
           <div className="path-container">
-            {JobCircles.map(path => (
+            {JobCircles.map((path, i) => (
               <PathCircleComponent
+                key={i}
                 selectTitle={this._selectTitle}
                 titleSelected={this.state.titleSelected}
                 active={path.titles.indexOf(this.state.titleSelected) > -1}
