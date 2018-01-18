@@ -4,7 +4,7 @@ form {
 }
 
 .create-page {
-  background: #343434; /*look for colour*/
+  background: #343434; 
   text-align: center;
   color: white;
 
@@ -21,6 +21,7 @@ form {
   .side-image {
     @include mobile-lg {
       max-width: 100px;
+      display: none;
     }
   }
 
@@ -29,6 +30,10 @@ form {
     margin: 0 auto;
     display: block;
     width: 70%;
+    @include mobile-lg {
+         display: none;
+        }
+
     .card {
       text-align: center;
       img {

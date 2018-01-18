@@ -13,7 +13,7 @@ class Footer extends Component {
                 <NavLink to="/careers">Join Us</NavLink>
               </li>
               <li>
-                <a href="/">Contact Us</a>
+                <a href="/contact">Contact Us</a>
               </li>
               <li>
                 <NavLink to="/TermsAndConditions">Terms and Conditions</NavLink>
@@ -24,7 +24,7 @@ class Footer extends Component {
             </ul>
             <ul className="footer-col">
               <li>
-                <a href="/">Press Kit</a>
+                <a href="../../images/footer/Press-Kit.pdf" download>Press Kit</a>
               </li>
               <li>
                 <a href="https://medium.com/@traviswu">Blog</a>

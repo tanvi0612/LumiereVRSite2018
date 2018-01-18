@@ -8,7 +8,8 @@
     "react-dom": "^16.2.0",
     "react-popupbox": "^2.0.1",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.0.17"
+    "react-scripts": "1.0.17",
+    "react-scrollable-anchor": "^0.5.0"
   },
   "scripts": {
     "deploy": "npm run build && firebase deploy",

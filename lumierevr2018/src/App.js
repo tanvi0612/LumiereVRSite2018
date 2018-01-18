@@ -14,6 +14,7 @@ import Homepage from "./pages/HomePage/HomePage.jsx";
 import Create from "./pages/CreatePage/CreatePage.jsx";
 import Distribute from "./pages/DistributePage/DistributePage.jsx";
 import CareerPage from "./pages/CareerPage/CareerPage";
+import ContactUs from "./pages/ContactUsPage/ContactUsPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage/PrivacyPolicyPage";
 import TermsAndConditionsPage from "./pages/TermsAndConditionsPage/TermsAndConditionsPage";
 
@@ -51,6 +52,7 @@ class App extends Component {
             <div className="content-wrap">
               <Route exact path="/" component={Homepage} />
               <Route exact path="/create" component={Create} />
+              <Route exact path="/contact" component={ContactUs} />
               <Route exact path="/distribute" component={Distribute} />
               <Route
                 exact

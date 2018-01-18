@@ -33,7 +33,7 @@ export default class Navbar extends Component {
         </NavLink>
       </li>
       <li>
-        <NavLink onClick={this._onNavTabClick} to="/contracts">
+        <NavLink onClick={this._onNavTabClick} to="/contact">
           Contacts
         </NavLink>
       </li>

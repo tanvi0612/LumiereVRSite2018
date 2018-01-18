@@ -33,8 +33,10 @@
             background: transparentize( black , .6 )
         p
             letter-spacing: 1px
-        button
+        button 
             margin: 2rem auto 0
+        a
+            color: white;
     .victoria-section
         height: 85vh
         background: url('../../images/HomePage/VictoriaBackround.png') center
@@ -60,7 +62,7 @@
         max-height: 570px
         .background-img
             flex: 1
-            width: 60vw
+            width: 70vw
             object-fit: cover
             filter: brightness(.4)
             @include mobile-lg
@@ -71,15 +73,15 @@
             position: absolute
             bottom: 0
             left: 0
-            height: 65%
-            width: calc(60vw + 100px)
+            height: 45%
+            width: calc(70vw + 100px)
             object-fit: contain
             max-width: fit-content
             object-position: bottom right
             @include mobile-lg
                 display: none
         .details
-            width: 40vw
+            width: 30vw
             padding: 5rem 0
             color: white
             background-color: transparentize(black, .2)
@@ -90,6 +92,8 @@
             button
                 margin: 4rem auto 0
                 display: block
+            a
+                color: white;
             img.retinad-logo
                 max-width: 150px
                 display: block
