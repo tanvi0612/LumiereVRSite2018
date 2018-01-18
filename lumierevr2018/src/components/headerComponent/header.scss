@@ -96,23 +96,26 @@ nav {
         color: white;
         padding: 2rem 1rem;
         min-width: 4rem;
+        text-align: center;
         display: block;
         &:after {
           content: "";
           display: block;
           position: absolute;
           bottom: 1.5rem;
-          left: 0;
+          left: 5%;
           height: 1px;
-          width: calc(100%);
+          width: calc(90%);
           transform: scale(0);
           transform-origin: center;
           will-change: transform;
+          opacity: 0;
           background-color: white;
           transition: all 0.3s ease-in-out;
         }
         &.active::after {
           transform: scale(1);
+          opacity: 1;
         }
       }
     }
