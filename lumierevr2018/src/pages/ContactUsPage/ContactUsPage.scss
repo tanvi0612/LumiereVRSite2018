@@ -1,58 +1,50 @@
 @import "../../styles/_functions.scss";
 
 .contactUs-page {
-	 padding: 5rem 0;
-        color: white;
-        background: transparentize(black, .4) url('../../images/HomePage/formbackground.png');
-        background-size: cover;
-        background-blend-mode: overlay;
-       
-        h4, h1{
-            text-align: center;
-            font-weight: bold;
-        }
-        
-        .address-grid{
-            list-style: none;
-            display: flex;
-            justify-content: space-between;
-            
-            li {
-                margin: 1rem;
-                flex: 1;
-               
-                h5 {
-                    text-align: center;
-                }
-            }
-        }
+  padding: 5rem 0;
+  color: white;
+  background: transparentize(black, 0.4)
+    url("../../images/HomePage/formbackground.png");
+  background-size: cover;
+  background-blend-mode: overlay;
 
-        form{
-            text-align: center;
-            input, textarea {
-                border: 2px solid white;
-                padding: 1rem 1.5rem;
-                font-size: 1.2em;
-                width: 80%;
-                margin: .5rem auto;
-                background: transparent;
-                &::-webkit-input-placeholder{
-                    color: transparentize(white, 0.4) !important;
-                    letter-spacing: 1px;
-                    font-family: brandon-grotesque !important;
-                }
+  h4,
+  h1 {
+    text-align: center;
+    font-weight: bold;
+  }
+  .address-grid {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
 
-                @include mobile-lg {
-                    width: 90%;
-                }
-            }
+    li {
+      margin: 1rem;
+      flex: 1;
 
-            button {
-                margin: 3rem auto 0;
-            }
-        }
+      h5 {
+        text-align: center;
+      }
+    }
+  }
 
-        
+  form {
+    text-align: center;
+    input,
+    textarea {
+      border: 2px solid white;
+      padding: 1rem 1.5rem;
+      font-size: 1.2em;
+      width: 80%;
+      margin: 0.5rem auto;
+      background: transparent;
+      @include mobile-lg {
+        width: 90%;
+      }
+    }
 
-
+    button {
+      margin: 3rem auto 0;
+    }
+  }
 }
