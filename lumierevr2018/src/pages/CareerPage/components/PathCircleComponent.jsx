@@ -1,53 +1,31 @@
-import React, { Component } from "react";
+import React from "react";
 
-export default class PathCircleComponent extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      titleSelected: null
-    };
-  }
-
-  _selectTitle = title =>
-    title !== this.state.titleSelected
-      ? this.setState({ titleSelected: title })
-      : this.setState({ titleSelected: false });
-
-  _handleSubmit = e => {
-    e.preventDefault();
-  };
-  render() {
-    return (
-      <div className="path-circle">
-        <img src={this.props.backgroundImage} alt="" />
-        <div
-          className={`bottom-overlay ${this.state.titleSelected
-            ? `selected`
-            : ``}`}
-        >
-          <h5>{this.props.pathName}</h5>
-          <ul>
-            {this.props.titles.map(title => (
-              <li
-                className={this.state.titleSelected === title ? `active` : ``}
-                onClick={() => this._selectTitle(title)}
-                key={title}
-              >
-                {title}
-              </li>
-            ))}
-          </ul>
-          {!!this.state.titleSelected && (
-            <form className="contact-form" onSubmit={this._handleSubmit}>
-              <input type="text" placeholder="Name" />
-              <input type="email" placeholder="Email" />
-              <input type="text" placeholder="IMDb/LinkedIn" />
-              <button type="submit">Apply Now</button>
-            </form>
-          )}
-        </div>
+export default props => {
+  return (
+    <div className="path-circle">
+      <img src={props.backgroundImage} alt="" />
+      <div className={`bottom-overlay ${props.active ? `selected` : ``}`}>
+        <h5>{props.pathName}</h5>
+        <ul>
+          {props.titles.map(title => (
+            <li
+              className={props.titleSelected === title ? `active` : ``}
+              onClick={() => props.selectTitle(title)}
+              key={title}
+            >
+              {title}
+            </li>
+          ))}
+        </ul>
+        {!!props.active && (
+          <form className="contact-form" onSubmit={this._handleSubmit}>
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <input type="text" placeholder="IMDb/LinkedIn" />
+            <button type="submit">Apply Now</button>
+          </form>
+        )}
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
