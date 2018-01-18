@@ -89,11 +89,31 @@ nav {
     ul li {
       list-style-type: none;
       display: inline-block;
+      position: relative;
       a {
         font-size: 19px;
         line-height: normal;
         color: white;
         padding: 2rem 1rem;
+        min-width: 4rem;
+        display: block;
+        &:after {
+          content: "";
+          display: block;
+          position: absolute;
+          bottom: 1.5rem;
+          left: 0;
+          height: 1px;
+          width: calc(100%);
+          transform: scale(0);
+          transform-origin: center;
+          will-change: transform;
+          background-color: white;
+          transition: all 0.3s ease-in-out;
+        }
+        &.active::after {
+          transform: scale(1);
+        }
       }
     }
   }
