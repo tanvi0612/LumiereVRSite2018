@@ -25,11 +25,10 @@ class App extends Component {
     super(props);
 
     this.state = {
-      coverRevealed: window.location.pathname !== "/"
+      coverRevealed: true
+      // coverRevealed: window.location.pathname !== "/"
     };
   }
-
-  _openLid = () => this.setState({ coverRevealed: true });
 
   render() {
     return (
@@ -48,25 +47,19 @@ class App extends Component {
             openLid={this._openLid}
           />
 
-          {this.state.coverRevealed && (
-            <div className="content-wrap">
-              <Route exact path="/" component={Homepage} />
-              <Route exact path="/create" component={Create} />
-              <Route exact path="/contact" component={ContactUs} />
-              <Route exact path="/distribute" component={Distribute} />
-              <Route
-                exact
-                path="/TermsAndConditions"
-                component={TermsAndConditionsPage}
-              />
-              <Route
-                exact
-                path="/PrivacyPolicy"
-                component={PrivacyPolicyPage}
-              />
-              <Route exact path="/careers" component={CareerPage} />
-            </div>
-          )}
+          <div className="content-wrap">
+            <Route exact path="/" component={Homepage} />
+            <Route exact path="/create" component={Create} />
+            <Route exact path="/contact" component={ContactUs} />
+            <Route exact path="/distribute" component={Distribute} />
+            <Route
+              exact
+              path="/TermsAndConditions"
+              component={TermsAndConditionsPage}
+            />
+            <Route exact path="/PrivacyPolicy" component={PrivacyPolicyPage} />
+            <Route exact path="/careers" component={CareerPage} />
+          </div>
 
           <Footer />
         </div>
