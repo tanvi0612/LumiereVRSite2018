@@ -52,6 +52,7 @@
     }
   }
 
+  
   .case1TheaterLeftDiv {
     float: left;
     width: 33%;
@@ -100,6 +101,15 @@
 
   p {
     font-size: 20px;
+    font-weight: normal;
+  }
+
+  .hide-on-mobile-resize {
+     
+      @include mobile-lg {
+        display: none !important;
+    }
+
   }
 
   h1 {

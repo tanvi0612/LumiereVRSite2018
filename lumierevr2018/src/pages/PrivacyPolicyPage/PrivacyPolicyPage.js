@@ -59,10 +59,10 @@ class PrivacyPolicyPage extends Component {
                 record of the user’s preferences when utilizing our services,
                 both on an individual and aggregate basis. For example, the
                 Company may use cookies to collect the following information:
-                <ul>
-                  <li> Emails </li>
-                  <li> Region of IP </li>
-                </ul>
+                <span>
+                  <br></br>1.  Emails 
+                  <br></br>2.  Region of IP 
+                </span>
               </p>
               <p>
                 The Company may use both persistent and session cookies;

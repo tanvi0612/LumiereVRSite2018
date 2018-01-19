@@ -6,6 +6,12 @@
         background: transparentize(black, .4) url('../../images/HomePage/formbackground.png');
         background-size: cover;
         background-blend-mode: overlay;
+
+        @include mobile-lg {
+            background: transparentize(black, .4) url('../../images/HomePage/formbackground-mobile.png');
+            background-size: cover;
+            background-blend-mode: overlay;
+        }
        
         h4, h1{
             text-align: center;

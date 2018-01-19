@@ -9,11 +9,12 @@ form {
   color: white;
 
   .image-header {
-    width: 500px;
+    width: 550px;
     display: block;
     margin: 2rem auto;
     max-width: 80%;
     @include mobile-lg {
+      width: 70%;
       max-width: 100%;
     }
   }
