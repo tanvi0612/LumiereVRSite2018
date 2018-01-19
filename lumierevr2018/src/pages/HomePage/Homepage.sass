@@ -10,11 +10,13 @@
         align-items: center
         height: calc(100vh - 90px)
         @include mobile-lg
+            height: 100vh
             padding-top: 0
             text-align: center
+            background: url('../../images/HomePage/poster.png') center no-repeat
             p, h3
                 text-align: left
-        video
+        #video-wrap
             position: absolute
             height: 100%
             width: 100%
@@ -22,6 +24,11 @@
             top: 0
             left: 0
             z-index: -1
+            canvas
+                width: 100vw !important
+                height: 100vh !important
+                background-size: cover
+                object-fit: cover
         &:before
             content: ''
             display: block
@@ -31,9 +38,11 @@
             height: 100%
             width: 100%
             background: transparentize( black , .6 )
+            @include mobile-lg
+                background: transparent
         p
             letter-spacing: 1px
-        button 
+        button
             margin: 2rem auto 0
         a
             color: white;
