@@ -47,16 +47,10 @@ export default class Navbar extends Component {
 
   render() {
     return (
-      <nav>
+      <nav className={!this.props.coverRevealed ? `outside-nav` : ``}>
         <div className="container no-limit">
           <div className="tabs-wrap">
-            <Link
-              to="/"
-              onClick={this._onNavTabClick}
-              className={`logo-wrap ${
-                !this.props.coverRevealed ? `outside-nav` : ``
-              }`}
-            >
+            <Link to="/" onClick={this._onNavTabClick} className={`logo-wrap`}>
               <div className="logo">
                 <img src={require("../../images/header/logo.png")} />
                 <span>Building the future of storytelling.</span>

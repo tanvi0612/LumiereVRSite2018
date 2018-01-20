@@ -48,32 +48,6 @@ nav {
       transform-origin: top left;
       transition: all 0.5s ease-in-out;
     }
-    &.outside-nav {
-      transform: translateY(-50%) translateX(-65%);
-      top: 50vh;
-      left: 50vw;
-      width: 600px;
-      height: 180px;
-      transition: all 0.5s ease-in-out;
-      .logo {
-        height: 180px;
-        transition: all 0.5s ease-in-out;
-      }
-      span {
-        transform: scale(1);
-        margin-top: -2.5em;
-        opacity: 1;
-        transition: all 0.5s ease-in-out;
-        @include mobile-lg {
-          margin-top: -5.5em;
-          font-size: 1.4rem;
-        }
-      }
-      @include mobile-lg {
-        max-width: 95vw;
-        transform: translateY(-50%) translateX(-59%);
-      }
-    }
   }
 
   .nav-pills ul,
@@ -127,6 +101,7 @@ nav {
     transform: translateY(-50%);
     z-index: 15;
     width: 30px;
+    opacity: 1;
     height: 20px;
     display: none;
     @include mobile-lg {
@@ -197,6 +172,39 @@ nav {
     }
     .sidebar-trigger {
       display: block;
+    }
+  }
+  &.outside-nav {
+    background: transparent;
+    .sidebar-trigger-wrap {
+      opacity: 0;
+    }
+    .logo-wrap {
+      transform: translateY(-50%) translateX(-65%);
+      top: 50vh;
+      left: 50vw;
+      width: 600px;
+      height: 180px;
+      transition: all 0.5s ease-in-out;
+      .logo {
+        height: 180px;
+        transition: all 0.5s ease-in-out;
+      }
+      span {
+        transform: scale(1);
+        margin-top: -2.5em;
+        opacity: 1;
+        transition: all 0.5s ease-in-out;
+        @include mobile-lg {
+          margin-top: -5.5em;
+          font-size: 1.4rem;
+        }
+      }
+      @include mobile-lg {
+        top: 20vh;
+        max-width: 85vw;
+        transform: translateY(-50%) translateX(-59%);
+      }
     }
   }
 }
