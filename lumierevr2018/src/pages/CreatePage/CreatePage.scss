@@ -4,7 +4,7 @@ form {
 }
 
 .create-page {
-  background: #343434; 
+  background: #343434;
   text-align: center;
   color: white;
 
@@ -32,8 +32,8 @@ form {
     display: block;
     width: 70%;
     @include mobile-lg {
-         display: none;
-        }
+      display: none;
+    }
 
     .card {
       text-align: center;
@@ -65,7 +65,7 @@ form {
   input {
     background: #343434;
     font-size: 20px;
-    font-family: brandon-grotesque;
+    width: calc(100% - 20px);
     margin-bottom: 25px;
     padding: 10px;
     color: white;

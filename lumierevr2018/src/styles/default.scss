@@ -105,7 +105,8 @@ button {
   }
 
   @include mobile-lg {
-    background: url("../images/HomePage/landing-background-mobile.png") center black;
+    background: url("../images/HomePage/landing-background-mobile.png") center
+      black;
     background-size: cover;
   }
 }
@@ -115,6 +116,11 @@ button {
 }
 .scroll-lock {
   overflow: hidden;
+}
+
+input,
+textarea {
+  color: white;
 }
 
 ::-webkit-input-placeholder {
