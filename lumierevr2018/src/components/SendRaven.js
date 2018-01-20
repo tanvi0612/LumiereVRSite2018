@@ -2,7 +2,8 @@ import { database } from "firebase";
 
 const db = database();
 
-export default (formLabel, data) => {
+export default async (formLabel, data) => {
   const timestamp = Date.now();
-  db.ref(`${formLabel}/${timestamp}`).set({ ...data });
+  await db.ref(`${formLabel}/${timestamp}`).set({ ...data });
+  console.log(formLabel, "success!!");
 };
