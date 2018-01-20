@@ -39,7 +39,7 @@ class Create extends Component {
             <div className="first-section">
               <img
                 className="image-header"
-                src={require("../../images/CreatePage/CreatewithUs.png")}
+                src={require("../../images/CreatePage/CreateWithUs.png")}
               />
             </div>
 
