@@ -164,6 +164,10 @@ nav {
     &.opened {
       left: 0%;
     }
+    a {
+      color: black;
+      font-weight: 400;
+    }
   }
 
   @include mobile-lg {

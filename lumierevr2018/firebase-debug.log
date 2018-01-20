@@ -1,0 +1,41 @@
+[debug] [2018-01-20T22:26:36.009Z] ----------------------------------------------------------------------
+[debug] [2018-01-20T22:26:36.013Z] Command:       /usr/local/Cellar/node/7.7.3/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-01-20T22:26:36.014Z] CLI Version:   3.13.1
+[debug] [2018-01-20T22:26:36.014Z] Platform:      darwin
+[debug] [2018-01-20T22:26:36.014Z] Node Version:  v7.7.3
+[debug] [2018-01-20T22:26:36.015Z] Time:          Sun Jan 21 2018 03:56:36 GMT+0530 (IST)
+[debug] [2018-01-20T22:26:36.015Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-01-20T22:26:36.052Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-01-20T22:26:36.052Z] > authorizing via signed-in user
+[debug] [2018-01-20T22:26:36.055Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-01-20T22:26:36.055Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/LCaji2eCxEq6MrRirNJOgLFU7eXgn9CJbvR4A9rHh9U',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sun Jan 21 2018 03:56:36 GMT+0530 (IST)
+[debug] [2018-01-20T22:26:36.652Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-20T22:26:36.673Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/lumisite-e6542  
+ Sun Jan 21 2018 03:56:36 GMT+0530 (IST)
+[debug] [2018-01-20T22:26:38.305Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-20T22:26:38.306Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/lumisite-e6542/tokens  
+ Sun Jan 21 2018 03:56:38 GMT+0530 (IST)
+[debug] [2018-01-20T22:26:39.316Z] <<< HTTP RESPONSE 200
+[info] 2
+[info] 
+[info] === Deploying to 'lumisite-e6542'...
+[info] 
+[info] i  deploying database, hosting
+[info] i  database: checking rules syntax...
+[debug] [2018-01-20T22:26:40.942Z] >>> HTTP REQUEST PUT https://lumisite-e6542.firebaseio.com/.settings/rules.json?dryRun=true {
+  "rules": {
+    ".read": "true",
+    ".write": "true"
+  }
+}
+ 
+ Sun Jan 21 2018 03:56:40 GMT+0530 (IST)
+[debug] [2018-01-20T22:26:42.290Z] <<< HTTP RESPONSE 200
+[info] ✔  database: rules syntax is valid
+[info] i  hosting: preparing build directory for upload...
