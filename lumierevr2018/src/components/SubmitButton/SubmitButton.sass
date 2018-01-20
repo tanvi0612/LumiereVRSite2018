@@ -1,0 +1,17 @@
+
+.submit-btn
+    position: relative
+    overflow: hidden
+    min-height: 6rem
+    > *
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translateX(-50%) translateY(-8rem)
+        will-change: transform
+        transition: all .3s ease-in-out
+        &.active
+            transform: translateX(-50%) translateY(-50%)
+    img
+        transform: translateX(-50%) translateY(8rem)
+
