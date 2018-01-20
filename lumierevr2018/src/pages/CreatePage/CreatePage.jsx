@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import SendRavenFor from "../../components/SendRaven";
 
 import "./CreatePage.css";
 
@@ -14,28 +15,37 @@ class Create extends Component {
     };
   }
 
-  change = e => {
-    this.setState({
-      [e.target.name]: e.target.value
-    });
-  };
-
-  onSubmit = e => {
+  _handleSubmit = e => {
     e.preventDefault();
-    console.log(this.state);
-    this.setState({
-      textAreaOne: "",
-      textAreaTwo: "",
-      textAreaThree: "",
-      email: ""
-    });
+    // data that needed to be added
+    let data = {};
+    const formId = "#create-with-us-form";
+
+    // Targeting all input and converting them into an array
+    const inputs = Array.apply(
+      null,
+      document.querySelectorAll(`${formId} .grab-data`)
+    );
+
+    // Grabing values from those input elements
+    inputs.forEach(input => (data[input.name] = input.value));
+
+    console.log({ ...data });
+
+    try {
+      SendRavenFor("create-with-us", data);
+    } catch (e) {
+      alert(
+        "There seems to be a problem with your network.😦 Please try again in some time"
+      );
+    }
   };
 
   render() {
     return (
       <div className="create-page page">
         <div className="container">
-          <form name="create-with-us-form" onSubmit={this.onSubmit}>
+          <form id="create-with-us-form" onSubmit={this._handleSubmit}>
             <div className="first-section">
               <img
                 className="image-header"
@@ -100,11 +110,10 @@ class Create extends Component {
                 <textarea
                   rows="8"
                   className="u-full-width textareacontainer"
+                  className="grab-data"
                   name="textAreaOne"
                   placeholder="Tell us a little about yourself or your brand and what you want to create"
                   id="textAreaOne"
-                  value={this.state.textAreaOne}
-                  onChange={this.change}
                 />
               </div>
             </div>
@@ -139,12 +148,10 @@ class Create extends Component {
                 </p>
                 <textarea
                   rows="8"
-                  className="u-full-width textareacontainer"
+                  className="grab-data"
                   name="textAreaTwo"
                   placeholder="Have you or your brand done any 360/VR productions in the past, if so what were they and what hardware setup did you use?"
                   id="textAreaTwo"
-                  value={this.state.textAreaTwo}
-                  onChange={this.change}
                 />
               </div>
             </div>
@@ -171,12 +178,10 @@ class Create extends Component {
 
                 <textarea
                   rows="8"
-                  className="u-full-width textareacontainer"
+                  className="grab-data"
                   name="textAreaThree"
                   placeholder="If you have ideas beyond pure 360 production (e.g. extensive CG + VFX) let us know here, we will tailor a pipeline to you"
                   id="textAreaThree"
-                  value={this.state.textAreaThree}
-                  onChange={this.change}
                 />
 
                 <p>
@@ -188,10 +193,9 @@ class Create extends Component {
                   className="u-full-width"
                   type="email"
                   name="email"
+                  className="grab-data"
                   placeholder="Email"
                   id="email"
-                  value={this.state.email}
-                  onChange={this.change}
                 />
               </div>
             </div>

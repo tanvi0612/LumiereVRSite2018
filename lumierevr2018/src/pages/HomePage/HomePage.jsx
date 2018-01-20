@@ -3,6 +3,7 @@ import moment from "moment";
 
 // importing kaleidoscopejs
 import * as Kaleidoscope from "kaleidoscopejs";
+import SendRavenFor from "../../components/SendRaven";
 
 import CountdownClock from "../../components/CountdownClock/CountdownClock";
 
@@ -21,6 +22,33 @@ class Homepage extends Component {
   };
 
   _openLid = () => this.setState({ coverRevealed: true });
+
+  _onSubmit = e => {
+    e.preventDefault();
+
+    // data that needed to be added
+    let data = {};
+
+    // Targeting all input and converting them into an array
+    const inputs = Array.apply(
+      null,
+      document.querySelectorAll(
+        "#contact-us-form input, #contact-us-form textarea"
+      )
+    );
+
+    // Grabing values from those input elements
+    inputs.forEach(input => (data[input.name] = input.value));
+
+    try {
+      SendRavenFor("contact-us", data);
+      document.getElementById("contact-us-form").reset();
+    } catch (e) {
+      alert(
+        "There seems to be a problem with your network.😦 Please try again in some time"
+      );
+    }
+  };
 
   render() {
     return (
@@ -120,12 +148,14 @@ class Homepage extends Component {
                 <h5>Toronto, Canada</h5>
               </li>
             </ul>
-            <form>
-              <input type="text" placeholder="Name" />
-              <input type="email" placeholder="Email" />
+            <form id="contact-us-form" onSubmit={this._onSubmit}>
+              <input type="text" name="name" placeholder="Name" required />
+              <input type="email" name="email" placeholder="Email" required />
               <textarea
                 cols="30"
                 rows="10"
+                name="message"
+                required
                 placeholder="How can we help you?"
               />
               <button type="submit" className="orange">
