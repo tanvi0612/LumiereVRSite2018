@@ -1,36 +1,10 @@
 import React, { Component } from "react";
-import SendRavenFor from "../../components/SendRaven";
+import ContactForm from "./ContactForm";
 
 import "./ContactUsPage.css";
 
 class ContactUs extends Component {
-  _onSubmit = async e => {
-    e.preventDefault();
-
-    // data that needed to be added
-    let data = {};
-
-    // Targeting all input and converting them into an array
-    const inputs = Array.apply(
-      null,
-      document.querySelectorAll(
-        "#contact-us-form input, #contact-us-form textarea"
-      )
-    );
-
-    // Grabing values from those input elements
-    inputs.forEach(input => (data[input.name] = input.value));
-
-    try {
-      await SendRavenFor("contact-us", data);
-      document.getElementById("contact-us-form").reset();
-    } catch (e) {
-      console.error(e);
-      alert(
-        "There seems to be a problem with your network.😦 Please try again in some time"
-      );
-    }
-  };
+  
   render() {
     return (
       <div className="contactUs-page page">
@@ -64,20 +38,7 @@ class ContactUs extends Component {
               <h5>Toronto, Canada</h5>
             </li>
           </ul>
-          <form id="contact-us-form" onSubmit={this._onSubmit}>
-            <input type="text" name="name" placeholder="Name" required />
-            <input type="email" name="email" placeholder="Email" required />
-            <textarea
-              cols="30"
-              rows="10"
-              name="message"
-              required
-              placeholder="How can we help you?"
-            />
-            <button type="submit" className="orange">
-              Send
-            </button>
-          </form>
+          <ContactForm />
         </div>
       </div>
     );
