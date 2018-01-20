@@ -8,35 +8,35 @@ class Create extends Component {
     super(props);
 
     this.state = {
-      textAreaOne: "",
-      textAreaTwo: "",
-      textAreaThree: "",
-      email: ""
+      loading: false,
+      success: false
     };
   }
 
-  _handleSubmit = e => {
+  _onSubmit = async e => {
     e.preventDefault();
+
     // data that needed to be added
     let data = {};
-    const formId = "#create-with-us-form";
 
     // Targeting all input and converting them into an array
-    const inputs = Array.apply(
-      null,
-      document.querySelectorAll(`${formId} .grab-data`)
-    );
+    const inputs = Array.apply(null, document.querySelectorAll(" .grab-data"));
 
     // Grabing values from those input elements
     inputs.forEach(input => (data[input.name] = input.value));
 
-    console.log({ ...data });
-
     try {
-      SendRavenFor("create-with-us", data);
-    } catch (e) {
+      this.setState({ loading: true, success: false });
+      await SendRavenFor("create-with-us", data);
+      this.setState({ loading: false, success: true });
+      document.getElementById("create-with-us-form").reset();
       alert(
-        "There seems to be a problem with your network.😦 Please try again in some time"
+        "Thanks for contacting us. We will get back to you as soon as possible"
+      );
+    } catch (e) {
+      console.error(e);
+      alert(
+        "There seems to be network problem. Please try again after some time"
       );
     }
   };
