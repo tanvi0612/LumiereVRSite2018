@@ -25,10 +25,11 @@ class App extends Component {
     super(props);
 
     this.state = {
-      coverRevealed: true
-      // coverRevealed: window.location.pathname !== "/"
+      coverRevealed: window.location.pathname !== "/"
     };
   }
+
+  _openLid = () => this.setState({ coverRevealed: true });
 
   render() {
     return (
