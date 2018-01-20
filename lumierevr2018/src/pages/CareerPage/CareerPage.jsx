@@ -3,7 +3,32 @@ import PathCircleComponent from "./components/PathCircleComponent";
 
 import "./CareerPage.css";
 
+const JobCircles = [
+  {
+    pathName: "Film",
+    titles: ["Producer", "Director", "VFX/CGI"],
+    backgroundImage: require("../../images/CareerPage/FilmBG.png")
+  },
+  {
+    pathName: "Tech",
+    titles: ["Unity", "React", "Maya"],
+    backgroundImage: require("../../images/CareerPage/TechBG.png")
+  }
+];
 export default class CareerPage extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      titleSelected: null
+    };
+  }
+
+  _selectTitle = title =>
+    title !== this.state.titleSelected
+      ? this.setState({ titleSelected: title })
+      : this.setState({ titleSelected: false });
+
   _handleSubmit = () => {};
   render() {
     return (
@@ -11,16 +36,14 @@ export default class CareerPage extends Component {
         <div className="container">
           <h3>Choose Your Path</h3>
           <div className="path-container">
-            <PathCircleComponent
-              pathName="Film"
-              titles={["Producer", "Director", "VFX/CGI"]}
-              backgroundImage={require("../../images/CareerPage/FilmBG.png")}
-            />
-            <PathCircleComponent
-              pathName="Tech"
-              titles={["Unity", "React", "Maya"]}
-              backgroundImage={require("../../images/CareerPage/TechBG.png")}
-            />
+            {JobCircles.map(path => (
+              <PathCircleComponent
+                selectTitle={this._selectTitle}
+                titleSelected={this.state.titleSelected}
+                active={path.titles.indexOf(this.state.titleSelected) > -1}
+                {...path}
+              />
+            ))}
           </div>
         </div>
       </div>

@@ -16,7 +16,7 @@ export default class Navbar extends Component {
     this.setState({ sidebarOpen: !this.state.sidebarOpen });
 
   _onNavTabClick = () => {
-    if (!this.props.coverRevealed) this.props.openLid;
+    if (!this.props.coverRevealed) this.props.openLid();
     if (this.state.sidebarOpen) this._toggleSidebar();
   };
 

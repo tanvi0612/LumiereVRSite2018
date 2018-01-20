@@ -27,6 +27,7 @@
     display: flex;
     justify-content: space-between;
     max-width: 100%;
+
     @include mobile-lg {
       flex-direction: column;
     }
@@ -34,6 +35,7 @@
       flex: 1;
       height: 200px;
       object-fit: cover;
+      max-width: calc(100% / 3);
     }
   }
   .case1TheaterWrapperDiv {
