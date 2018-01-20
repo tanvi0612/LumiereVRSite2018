@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "firebase": "^4.9.0",
     "kaleidoscopejs": "^1.0.14",
     "moment": "^2.20.1",
     "react": "^16.2.0",

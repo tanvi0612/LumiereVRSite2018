@@ -4,6 +4,9 @@ import { createBrowserHistory } from "history";
 
 import "./styles/default.css";
 
+// Initializing firebase app
+import "./firebaseconfig";
+
 // Global components
 import Header from "./components/headerComponent/header.jsx";
 import Footer from "./components/footerComponent/footer.jsx";
@@ -17,6 +20,7 @@ import CareerPage from "./pages/CareerPage/CareerPage";
 import ContactUs from "./pages/ContactUsPage/ContactUsPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage/PrivacyPolicyPage";
 import TermsAndConditionsPage from "./pages/TermsAndConditionsPage/TermsAndConditionsPage";
+
 
 const history = createBrowserHistory();
 
