@@ -103,6 +103,11 @@ button {
   &.revealed {
     transform: translateY(-100%);
   }
+
+  @include mobile-lg {
+    background: url("../images/HomePage/landing-background-mobile.png") center black;
+    background-size: cover;
+  }
 }
 
 .App {
