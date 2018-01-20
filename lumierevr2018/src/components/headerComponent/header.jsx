@@ -53,12 +53,12 @@ export default class Navbar extends Component {
             <Link
               to="/"
               onClick={this._onNavTabClick}
-              className={`logo-wrap ${!this.props.coverRevealed
-                ? `outside-nav`
-                : ``}`}
+              className={`logo-wrap ${
+                !this.props.coverRevealed ? `outside-nav` : ``
+              }`}
             >
               <div className="logo">
-                <img src={require("../../images/header/LogoForNav.png")} />
+                <img src={require("../../images/header/logo.png")} />
                 <span>Building the future of storytelling.</span>
               </div>
             </Link>
@@ -67,9 +67,9 @@ export default class Navbar extends Component {
 
             <div className="sidebar-trigger-wrap">
               <div
-                className={`sidebar-trigger ${this.state.sidebarOpen
-                  ? `opened`
-                  : ``}`}
+                className={`sidebar-trigger ${
+                  this.state.sidebarOpen ? `opened` : ``
+                }`}
                 onClick={this._toggleSidebar}
               >
                 <div className="bar" />
