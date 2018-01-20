@@ -21,14 +21,15 @@ export default class CareerPage extends Component {
     super(props);
 
     this.state = {
-      titleSelected: null
+      titleSelected: null,
+      loading: false,
+      success: false
     };
   }
 
   _handleSubmit = async e => {
     e.preventDefault();
 
-    const formId = "contact-form";
     // data that needed to be added
     let data = {
       title: this.state.titleSelected
@@ -37,23 +38,25 @@ export default class CareerPage extends Component {
     // Targeting all input and converting them into an array
     const inputs = Array.apply(
       null,
-      document.querySelectorAll(
-        "#" + formId + " input, #" + formId + " textarea"
-      )
+      document.querySelectorAll("#career-form input, #career-form textarea")
     );
 
     // Grabing values from those input elements
     inputs.forEach(input => (data[input.name] = input.value));
 
     try {
-      console.log({ ...data });
-      await SendRavenFor(`joining-appliations`, data);
-      this.setState({ titleSelected: null });
+      this.setState({ loading: true, success: false });
+      await SendRavenFor("joining-appliations", data);
+      await this.setState({
+        loading: false,
+        success: true,
+        titleSelected: null
+      });
+      alert(
+        "Thanks for contacting us. We will get back to you as soon as possible"
+      );
     } catch (e) {
       console.error(e);
-      alert(
-        "There seems to be a problem with your network.😦 Please try again in some time"
-      );
     }
   };
 

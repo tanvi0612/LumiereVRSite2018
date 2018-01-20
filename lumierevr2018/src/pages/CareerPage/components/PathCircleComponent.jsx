@@ -18,7 +18,7 @@ export default props => {
           ))}
         </ul>
         {!!props.active && (
-          <form id="contact-form" onSubmit={props.handleSubmit}>
+          <form id="career-form" onSubmit={props.handleSubmit}>
             <input type="text" name="name" placeholder="Name" />
             <input type="email" name="email" placeholder="Email" />
             <input type="text" name="profile" placeholder="IMDb/LinkedIn" />
