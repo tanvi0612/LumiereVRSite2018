@@ -56,11 +56,11 @@ class Distribute extends Component {
                   Standard micro-usb charging towers ensure headsets are fully
                   charged at night and ready to run in the morning.
                 </p>
-                <p>
+                <p className= "hide-on-mobile-resize">
                   On the left is an installment we’ve built for Prairie Fire in
                   Kansas City.
                 </p>
-                <p>
+                <p className= "hide-on-mobile-resize">
                   On the bottom is complementary analysis of both performance
                   and behaviour from headtracking heatmaps powered by Retinad.
                 </p>
@@ -141,7 +141,7 @@ class Distribute extends Component {
                   </a>{" "}
                   for more details!
                 </p>
-                <p>
+                <p className= "hide-on-mobile-resize">
                   Top Left: VR Fest by Jump Into The Light <br />
                   Left: VIP Event for the Canadian Media Fund <br />
                   Bottom: Gold Coast Motor Festival by JP Morgan <br />
