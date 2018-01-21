@@ -21,7 +21,11 @@ export default props => {
           <form id="career-form" onSubmit={props.handleSubmit}>
             <input type="text" name="name" placeholder="Name" />
             <input type="email" name="email" placeholder="Email" />
-            <input type="text" name="profile" placeholder="IMDb/LinkedIn" />
+            <input
+              type="text"
+              name="profile"
+              placeholder={props.additionalLinkHints || `IMDb/LinkedIn`}
+            />
             <button type="submit">Apply Now</button>
           </form>
         )}
