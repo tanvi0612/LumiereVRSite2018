@@ -94,7 +94,7 @@ class Homepage extends Component {
         </section>
         <section className="find-us-section">
           <div className="container">
-            <h4>VR Theatre Solution</h4>
+            <h4>Find Us!</h4>
             <ul className="address-grid">
               <li>
                 <a href="https://www.google.ca/maps/place/9966+Shen+Nan+Da+Dao,+Nanshan+Qu,+Shenzhen+Shi,+Guangdong+Sheng,+China,+518057/@22.540785,113.9381503,17z/data=!3m1!4b1!4m5!3m4!1s0x3403ee08b5eb736f:0x694f6d5fc84ede24!8m2!3d22.540785!4d113.940339">

@@ -149,7 +149,7 @@ class Distribute extends Component {
               </div>
             </div>
 
-            <div className="image-wrap">
+            <div className="image-wrap hide-on-mobile-resize">
               <img
                 src={require("../../images/theaters/Case2SitdownParty.png")}
               />
