@@ -24,7 +24,7 @@ class Footer extends Component {
             </ul>
             <ul className="footer-col">
               <li>
-                <a href="../../images/footer/Press-Kit.pdf" download>Press Kit</a>
+                <a href="https://firebasestorage.googleapis.com/v0/b/lumisite-e6542.appspot.com/o/Press-Kit.pdf?alt=media&token=99055e2a-9221-4843-8278-c1d5f88f1f1b" target="_blank">Press Kit</a>
               </li>
               <li>
                 <a href="https://medium.com/@traviswu">Blog</a>
