@@ -21,7 +21,6 @@ import ContactUs from "./pages/ContactUsPage/ContactUsPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage/PrivacyPolicyPage";
 import TermsAndConditionsPage from "./pages/TermsAndConditionsPage/TermsAndConditionsPage";
 
-
 const history = createBrowserHistory();
 
 class App extends Component {
@@ -33,14 +32,32 @@ class App extends Component {
     };
   }
 
+  componentDidMount() {
+    if (!this.state.coverRevealed) this.scrollToOpenListener();
+  }
+
+  scrollToOpenListener = () => {
+    let lastScrollPosition = window.scrollY;
+    const parent = this;
+
+    window.addEventListener("scroll", action);
+
+    function action() {
+      if (window.scrollY - lastScrollPosition > 5) {
+        console.log(window.scrollY, lastScrollPosition);
+        parent._openLid();
+        window.removeEventListener("scroll", action);
+      }
+      lastScrollPosition = window.scrollY;
+    }
+  };
+
   _openLid = () => this.setState({ coverRevealed: true });
 
   render() {
     return (
       <Router history={history}>
-        <div
-          className={`App ${!this.state.coverRevealed ? `scroll-lock` : ``}`}
-        >
+        <div className="App">
           <Header
             coverRevealed={this.state.coverRevealed}
             openLid={this._openLid}
