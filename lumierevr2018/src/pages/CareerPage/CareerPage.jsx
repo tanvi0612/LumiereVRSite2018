@@ -8,12 +8,14 @@ const JobCircles = [
   {
     pathName: "Film",
     titles: ["Producer", "Director", "VFX/CGI"],
-    backgroundImage: require("../../images/CareerPage/FilmBG.png")
+    backgroundImage: require("../../images/CareerPage/FilmBG.png"),
+    additionalLinkHints: `IMDb/Linkedin`
   },
   {
     pathName: "Tech",
     titles: ["Unity", "React", "Maya"],
-    backgroundImage: require("../../images/CareerPage/TechBG.png")
+    backgroundImage: require("../../images/CareerPage/TechBG.png"),
+    additionalLinkHints: `Github/Linkedin`
   }
 ];
 export default class CareerPage extends Component {
