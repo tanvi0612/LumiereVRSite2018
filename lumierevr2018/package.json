@@ -14,7 +14,7 @@
     "react-scrollable-anchor": "^0.5.0"
   },
   "scripts": {
-    "deploy": "npm run build && firebase deploy",
+    "deploy": "npm run build && firebase deploy && git push",
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
     "start-js": "react-scripts start",
