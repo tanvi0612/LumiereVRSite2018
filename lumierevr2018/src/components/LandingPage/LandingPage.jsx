@@ -32,7 +32,7 @@ export default props => {
       className={`landing-page ${props.coverRevealed ? `revealed` : ``}`}
       onClick={props.openLid}
     >
-      <div className="landing-content">
+      <div className="landing-content overlay">
         {renderNavPills(props.onNavTabClick)}
       </div>
       <img className='down-arrow' src={require("./chevron-down.svg")} alt="" />

@@ -112,11 +112,25 @@ button {
     position: absolute;
     height: 100vh;
     width: 100vw;
-    background: url("../images/HomePage/landingbackground.png") center black;
+    background: url("../images/HomePage/landingbackground.png");
+    background-size: cover;
+    opacity: 1;
     ul li {
       opacity: 1;
       z-index: 25;
     }
+  }
+
+  .overlay:before{
+    position: absolute;
+    content:" ";
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display: block;
+    z-index:0;
+    background-color: rgba(0,0,0,0.6);
   }
   .landing-tabs {
     position: absolute;
