@@ -36,12 +36,10 @@ class Homepage extends Component {
               <h3>Create Immersive Experience</h3>
               <p>
                 As the medium for the content continue to evolve, Virtual Realty
-                has become the people's choice for immersion
+                has become the people's choice for immersion.
               </p>
               <p>
-                LumiereVR's pipeline for the creation and distribution will help
-                realize your brand's potential to engage your audience
-                emotionally.
+                LumiereVR produces experiences that tie brands and narratives together to build sustainable and unforgettable characters and themes.
               </p>
               <button className="blue">
                 <a href="/create">Get Started</a>

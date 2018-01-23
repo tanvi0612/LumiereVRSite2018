@@ -3,6 +3,8 @@
 .career-page {
   display: flex;
   align-items: center;
+  
+  padding-bottom: 10%;
   height: calc(100vh - 90px);
   @include mobile-lg {
     padding: calc(90px + 5rem) 0 5rem;
@@ -10,11 +12,14 @@
     height: fit-content;
   }
   h3 {
+    padding-top: 10%;
     text-align: center;
+    font-weight: 600;
   }
   .path-container {
     display: flex;
     justify-content: space-around;
+    margin: 10px;
     align-items: center;
     @include mobile-lg {
       flex-direction: column;
@@ -23,13 +28,16 @@
   .path-circle {
     position: relative;
     border-radius: 50%;
-    height: 330px;
-    width: 330px;
+    height: 500px;
+    width: 500px;
     overflow: hidden;
+    
     z-index: 0;
     @include mobile-lg {
       margin: 2rem 0;
       overflow: hidden;
+      height: 330px;
+      width: 330px;
     }
     @include mobile-sm {
       height: 270px;
@@ -74,12 +82,26 @@
           margin: 0 0.5rem;
           transition: all 0.3s ease-in-out;
           cursor: pointer;
+          border: 1px solid white;
+          padding: .5rem 1rem;
+          min-width: 7rem;
+          text-align: center;
+
+          @include mobile-lg {
+            margin: 0 0.3rem;
+            border: 1px solid white;
+            text-align: center;
+            padding: .2rem .3rem;
+            min-width: 4.7rem;
+          }
           &.active {
             color: white;
             padding: 0.2rem 0.7rem;
+            border: 0;
             border-radius: 2rem;
             font-size: 1.2em;
           }
+
         }
       }
 
@@ -96,6 +118,7 @@
           border-radius: 1rem;
           outline: none;
           border: none;
+          height: 30px;
           width: calc(100% - 2rem);
         }
         button {

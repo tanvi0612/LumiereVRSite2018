@@ -13,7 +13,7 @@ class Footer extends Component {
                 <NavLink to="/careers">Join Us</NavLink>
               </li>
               <li>
-                <a href="/contact">Contact Us</a>
+                <NavLink to="/contact">Contact Us</NavLink>
               </li>
               <li>
                 <NavLink to="/TermsAndConditions">Terms and Conditions</NavLink>
