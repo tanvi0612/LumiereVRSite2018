@@ -88,6 +88,7 @@
           text-align: center;
 
           @include mobile-lg {
+            font-size: 14px;
             margin: 0 0.3rem;
             border: 1px solid white;
             text-align: center;
@@ -100,7 +101,16 @@
             border: 0;
             border-radius: 2rem;
             font-size: 1.2em;
+
+             @include mobile-lg {
+            font-size: 15px;
+            margin: 0 0.3rem;
+            text-align: center;
+            padding: .2rem .1rem;
+            min-width: 5.8rem;
+            }
           }
+
 
         }
       }
