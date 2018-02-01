@@ -23,8 +23,8 @@ export default class Navbar extends Component {
   renderNavPills = props => (
     <ul>
       <li>
-        <NavLink onClick={this._onNavTabClick} to="/create">
-          Create
+        <NavLink onClick={this._onNavTabClick} to="/connect">
+          Connect
         </NavLink>
       </li>
       <li>
@@ -34,7 +34,7 @@ export default class Navbar extends Component {
       </li>
       <li>
         <NavLink onClick={this._onNavTabClick} to="/contact">
-          Contacts
+          Contact
         </NavLink>
       </li>
       <li className="last">

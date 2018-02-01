@@ -4,9 +4,8 @@ import moment from "moment";
 // importing kaleidoscopejs
 import * as Kaleidoscope from "kaleidoscopejs";
 import CountdownClock from "../../components/CountdownClock/CountdownClock";
-import ContactUsForm from '../ContactUsPage/ContactForm'
+import ContactUsForm from "../ContactUsPage/ContactForm";
 import "./Homepage.css";
-
 
 class Homepage extends Component {
   constructor(props) {
@@ -35,14 +34,15 @@ class Homepage extends Component {
             <div className="five columns text-wrap">
               <h3>Create Immersive Experience</h3>
               <p>
-                As the medium for the content continue to evolve, Virtual Realty
-                has become the people's choice for immersion.
+                As the medium for content continue to evolve, Virtual Reality
+                has become the people’s choice for immersion.
               </p>
               <p>
-                LumiereVR produces experiences that tie brands and narratives together to build sustainable and unforgettable characters and themes.
+                LumiereVR connect brands and studios together to bring the best
+                VR film experiences to consumers.
               </p>
               <button className="blue">
-                <a href="/create">Get Started</a>
+                <a href="/create">Get Connected</a>
               </button>
             </div>
           </div>
