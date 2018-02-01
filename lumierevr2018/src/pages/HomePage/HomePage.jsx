@@ -42,7 +42,7 @@ class Homepage extends Component {
                 LumiereVR produces experiences that tie brands and narratives together to build sustainable and unforgettable characters and themes.
               </p>
               <button className="blue">
-                <a href="/create">Get Started</a>
+                <a href="/connect">Get Started</a>
               </button>
             </div>
           </div>

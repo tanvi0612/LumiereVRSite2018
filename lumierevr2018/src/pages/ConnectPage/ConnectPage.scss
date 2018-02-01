@@ -1,0 +1,192 @@
+@import "../../styles/_functions.scss";
+
+.connect-page {
+  display: flex;
+  align-items: center;
+  background: #343434;
+  text-align: center;
+  color: white;
+  
+  padding-bottom: 10%;
+  height: calc(100vh - 90px);
+  @include mobile-lg {
+    padding: calc(90px + 5rem) 0 5rem;
+    min-height: 100vh;
+    height: fit-content;
+  }
+  h2 {
+    padding-top: 10%;
+    text-align: center;
+    font-weight: 600;
+  }
+  .path-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    align-items: center;
+    @include mobile-lg {
+      flex-direction: column;
+    }
+  }
+  .path-circle {
+    position: relative;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+    
+    z-index: 0;
+    @include mobile-lg {
+      margin: 2rem 0;
+      overflow: hidden;
+      height: 330px;
+      width: 330px;
+    }
+    @include mobile-sm {
+      height: 270px;
+      width: 270px;
+    }
+    > img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+    .bottom-overlay {
+      background: transparentize(black, 0.1);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 25%;
+      color: white;
+      padding: 1rem 0;
+      transition: all 0.3s ease-out;
+      @include mobile-sm {
+        height: 50%;
+      }
+      h5 {
+        text-align: center;
+        margin: 0.5rem;
+        border: 1px solid white;
+        display: inline-block;
+        padding: 0.5rem 1rem;
+      }
+      ul {
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+        align-items: center;
+        list-style: none;
+        margin: 0 auto;
+        width: 60%;
+        @include mobile-sm {
+          width: 75%;
+        }
+        li {
+          display: inline-block;
+          font-size: 20px;
+          margin: 0 1rem;
+          transition: all 0.3s ease-in-out;
+          cursor: pointer;
+         
+          padding: .1rem 1.5rem;
+          min-width: 7rem;
+          text-align: center;
+
+          @include mobile-lg {
+            font-size: 14px;
+            margin: 0 0.3rem;
+            border: 1px solid white;
+            text-align: center;
+            padding: .2rem .3rem;
+            min-width: 4.7rem;
+          }
+          &.active {
+            color: white;
+            padding: 0.2rem 0.7rem;
+            border: 0;
+            border-radius: 2rem;
+            font-size: 30px;
+
+             @include mobile-lg {
+            font-size: 15px;
+            margin: 0 0.3rem;
+            text-align: center;
+            padding: .2rem .1rem;
+            min-width: 5.8rem;
+            }
+          }
+
+
+        }
+      }
+
+      #connect-form {
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+        input {
+          display: block;
+          color: black;
+          margin: 0.5rem auto;
+          padding: 0 1rem;
+          font-size: 1.1rem;
+          border-radius: 1rem;
+          outline: none;
+          border: none;
+          height: 30px;
+          width: calc(100% - 2rem);
+        }
+        button {
+          margin-top: 1rem;
+          padding: 0.5rem;
+          border-radius: 1rem;
+          width: 100%;
+          color: white;
+          cursor: pointer;
+          transition: all 0.3s ease-out;
+          @include mobile-lg {
+            font-size: 1.5rem;
+          }
+          &:hover,
+          &:focus {
+            outline: none;
+            padding: 0.5rem 1rem;
+            transform: scale(1.1);
+            border: none;
+          }
+        }
+
+        ::-webkit-input-placeholder {
+          color: black !important;
+        }
+        ::-moz-placeholder {
+          color: black !important;
+        }
+        :-ms-input-placeholder {
+          color: black !important;
+        }
+        :-moz-placeholder {
+          color: black !important;
+        }
+      }
+      &.selected {
+        height: 60%;
+      }
+    }
+    &:first-child {
+      li.active,
+      button {
+        background: #e065cc;
+      }
+    }
+    &:nth-child(2) {
+      li.active,
+      button {
+        background: #64e0d9;
+      }
+    }
+  }
+}
