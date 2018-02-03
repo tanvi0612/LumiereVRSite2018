@@ -16,6 +16,10 @@ export default class Navbar extends Component {
     this.setState({ sidebarOpen: !this.state.sidebarOpen });
 
   _onNavTabClick = () => {
+    // resetting scroll
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+
     if (!this.props.coverRevealed) this.props.openLid();
     if (this.state.sidebarOpen) this._toggleSidebar();
   };
