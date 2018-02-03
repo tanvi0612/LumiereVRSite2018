@@ -23,13 +23,13 @@ export default class Navbar extends Component {
   renderNavPills = props => (
     <ul>
       <li>
-        <NavLink onClick={this._onNavTabClick} to="/connect">
-          Connect
+        <NavLink onClick={this._onNavTabClick} to="/start">
+          Start
         </NavLink>
       </li>
       <li>
-        <NavLink onClick={this._onNavTabClick} to="/distribute">
-          Distribute
+        <NavLink onClick={this._onNavTabClick} to="/theatre">
+          Theatre
         </NavLink>
       </li>
       <li>
@@ -37,10 +37,13 @@ export default class Navbar extends Component {
           Contact
         </NavLink>
       </li>
-      <li className="last">
-        <NavLink onClick={this._onNavTabClick} to="/careers">
+      <li>
+        <NavLink onClick={this._onNavTabClick} to="/join">
           Join
         </NavLink>
+      </li>
+      <li className="last">
+        <a href="https://medium.com/lumierevr">Blog</a>
       </li>
     </ul>
   );

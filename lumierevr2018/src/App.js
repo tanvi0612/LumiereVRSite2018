@@ -72,16 +72,16 @@ class App extends Component {
 
           <div className="content-wrap">
             <Route exact path="/" component={Homepage} />
-            <Route exact path="/connect" component={Connect} />
+            <Route exact path="/start" component={Connect} />
             <Route exact path="/contact" component={ContactUs} />
-            <Route exact path="/distribute" component={Distribute} />
+            <Route exact path="/theatre" component={Distribute} />
             <Route
               exact
               path="/TermsAndConditions"
               component={TermsAndConditionsPage}
             />
             <Route exact path="/PrivacyPolicy" component={PrivacyPolicyPage} />
-            <Route exact path="/careers" component={CareerPage} />
+            <Route exact path="/join" component={CareerPage} />
           </div>
 
           <Footer />
