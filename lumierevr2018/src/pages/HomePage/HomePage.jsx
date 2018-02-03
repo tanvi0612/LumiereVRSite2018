@@ -28,6 +28,7 @@ class Homepage extends Component {
   render() {
     return (
       <div className="homepage page">
+        {/* Splash Screen */}
         <section className="splash-screen first-section">
           <div id="video-wrap" />
           <div className="container">
@@ -47,12 +48,16 @@ class Homepage extends Component {
             </div>
           </div>
         </section>
+
+        {/* Victoria Secret Section */}
         <section className="victoria-section">
           <div className="timer-wrap">
             <h2>Coming Soon !</h2>
             <CountdownClock endDate={moment("2018-02-14")} />
           </div>
         </section>
+
+        {/* VR Theatre Section */}
         <section className="vr-theatre-section">
           <img
             className="background-img"
@@ -90,6 +95,8 @@ class Homepage extends Component {
             alt=""
           />
         </section>
+
+        {/* Find us Section */}
         <section className="find-us-section">
           <div className="container">
             <h4>Find Us!</h4>
