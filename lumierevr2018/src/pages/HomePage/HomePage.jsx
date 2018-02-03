@@ -68,16 +68,16 @@ class Homepage extends Component {
             <div className="container">
               <h4>VR Theatre Solution</h4>
               <p>
-                You have great content!<br />
-                You know people will adore it!
+                You run an event or convention center <br />
+                You know people love VR!
               </p>
               <p>
-                Let us help you put in front of people with out tailored VR
-                Theatres.
+                Let us facilitate a seamless VR Theater experience for you with
+                our system.
               </p>
               <p>
-                See how creators and brands have used our systems to get
-                traction and even revenue !
+                See how other events, amusement parks, and festivals have used
+                our theaters to drive engagements!
               </p>
               <button className="purple">
                 <a href="/distribute">Learn more</a>
