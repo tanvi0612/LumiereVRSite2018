@@ -96,6 +96,26 @@ class Homepage extends Component {
           />
         </section>
 
+        <section className="our-supporters-section">
+          <div className="container">
+            <h2>Our Biggest Supporters and Partners!</h2>
+            <div className="img-wrap">
+              <img
+                src={require("../../images/HomePage/SupportPartners/techstars.png")}
+                alt=""
+              />
+              <img
+                src={require("../../images/HomePage/SupportPartners/vive.png")}
+                alt=""
+              />
+              <img
+                src={require("../../images/HomePage/SupportPartners/retinad.png")}
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+
         {/* Find us Section */}
         <section className="find-us-section">
           <div className="container">
