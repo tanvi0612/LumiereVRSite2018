@@ -42,7 +42,7 @@ class Homepage extends Component {
                 VR film experiences to consumers.
               </p>
               <button className="blue">
-                <a href="/create">Get Connected</a>
+                <a href="/connect">Get Started</a>
               </button>
             </div>
           </div>
