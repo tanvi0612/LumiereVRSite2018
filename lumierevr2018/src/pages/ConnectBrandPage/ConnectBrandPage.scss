@@ -1,0 +1,44 @@
+@import "../../styles/_functions.scss";
+
+.connect-brand-page {
+  text-align: center;
+  background: #343434;
+  color: white;
+  > .container {
+    max-width: 1000px;
+    padding-top: 4rem;
+  }
+  .tile-wrap {
+    display: grid;
+    width: 50vw;
+    grid-template-columns: 25vw 25vw;
+    grid-template-rows: 25vw 25vw;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    margin: 0 auto;
+    color: white;
+    @include desktop {
+      width: 60vw;
+      grid-template-columns: 30vw 30vw;
+      grid-template-rows: 30vw 30vw;
+    }
+    @include mobile-lg {
+      width: 100%;
+      grid-template-columns: 100%;
+      grid-template-rows: inherit;
+    }
+    .tile {
+      padding: 4rem 2rem;
+      @include mobile-lg {
+        padding: 3rem 1rem;
+      }
+      p {
+        margin: 0;
+      }
+    }
+  }
+  button {
+    margin: 4rem 0;
+    width: 350px;
+  }
+}

@@ -17,7 +17,10 @@ import Homepage from "./pages/HomePage/HomePage.jsx";
 //import Create from "./pages/CreatePage/CreatePage.jsx";
 import Distribute from "./pages/DistributePage/DistributePage.jsx";
 import CareerPage from "./pages/CareerPage/CareerPage";
+
 import Connect from "./pages/ConnectPage/ConnectPage";
+import ConnectBrandPage from "./pages/ConnectBrandPage/ConnectBrandPage";
+
 import ContactUs from "./pages/ContactUsPage/ContactUsPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage/PrivacyPolicyPage";
 import TermsAndConditionsPage from "./pages/TermsAndConditionsPage/TermsAndConditionsPage";
@@ -74,6 +77,7 @@ class App extends Component {
             <Route exact path="/" component={Homepage} />
             <Route exact path="/start" component={Connect} />
             <Route exact path="/contact" component={ContactUs} />
+            <Route exact path="/start/brand" component={ConnectBrandPage} />
             <Route exact path="/theatre" component={Distribute} />
             <Route
               exact
