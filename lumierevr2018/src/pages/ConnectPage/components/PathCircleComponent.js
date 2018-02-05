@@ -23,7 +23,7 @@ export default props => {
                 </li>
               ))}
             </ul>
-            <input type="email" name="email" placeholder="Email" />
+            <input type="email" name="email" placeholder="Email" required />
             <button type="submit">Enter</button>
           </form>
         )}
