@@ -79,9 +79,9 @@ class App extends Component {
 
             <Route exact path="/start" component={Connect} />
             <Route exact path="/start/studio" component={StudioPage} />
+            <Route exact path="/start/brand" component={ConnectBrandPage} />
 
             <Route exact path="/contact" component={ContactUs} />
-            <Route exact path="/start/brand" component={ConnectBrandPage} />
             <Route exact path="/theatre" component={Distribute} />
             <Route
               exact
