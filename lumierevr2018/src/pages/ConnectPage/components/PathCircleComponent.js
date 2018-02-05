@@ -22,7 +22,7 @@ export default props => {
           ))}
         </ul>
             <input type="email" name="email" placeholder="Email" />
-            <button type="submit">Sign up</button>
+            <button type="submit">Enter</button>
           </form>
         )}
       </div>
