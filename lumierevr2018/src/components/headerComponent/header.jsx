@@ -3,6 +3,34 @@ import { NavLink, Link } from "react-router-dom";
 
 import "./header.css";
 
+export const renderNavPills = tabClickHandle => (
+  <ul>
+    <li>
+      <NavLink onClick={tabClickHandle} to="/start">
+        Start
+      </NavLink>
+    </li>
+    <li>
+      <NavLink onClick={tabClickHandle} to="/theatre">
+        Theatre
+      </NavLink>
+    </li>
+    <li>
+      <NavLink onClick={tabClickHandle} to="/contact">
+        Contact
+      </NavLink>
+    </li>
+    <li>
+      <NavLink onClick={tabClickHandle} to="/join">
+        Join
+      </NavLink>
+    </li>
+    <li className="last">
+      <a href="https://medium.com/lumierevr">Blog</a>
+    </li>
+  </ul>
+);
+
 export default class Navbar extends Component {
   constructor(props) {
     super(props);
@@ -24,34 +52,6 @@ export default class Navbar extends Component {
     if (this.state.sidebarOpen) this._toggleSidebar();
   };
 
-  renderNavPills = props => (
-    <ul>
-      <li>
-        <NavLink onClick={this._onNavTabClick} to="/start">
-          Start
-        </NavLink>
-      </li>
-      <li>
-        <NavLink onClick={this._onNavTabClick} to="/theatre">
-          Theatre
-        </NavLink>
-      </li>
-      <li>
-        <NavLink onClick={this._onNavTabClick} to="/contact">
-          Contact
-        </NavLink>
-      </li>
-      <li>
-        <NavLink onClick={this._onNavTabClick} to="/join">
-          Join
-        </NavLink>
-      </li>
-      <li className="last">
-        <a href="https://medium.com/lumierevr">Blog</a>
-      </li>
-    </ul>
-  );
-
   render() {
     return (
       <nav className={!this.props.coverRevealed ? `outside-nav` : ``}>
@@ -64,7 +64,9 @@ export default class Navbar extends Component {
               </div>
             </Link>
 
-            <div className="nav-pills desktop">{this.renderNavPills()}</div>
+            <div className="nav-pills desktop">
+              {renderNavPills(this.props._onNavTabClick)}
+            </div>
 
             <div className="sidebar-trigger-wrap">
               <div
@@ -81,7 +83,7 @@ export default class Navbar extends Component {
             <div
               className={`side-bar ${this.state.sidebarOpen ? `opened` : ``}`}
             >
-              {this.renderNavPills()}
+              {renderNavPills(this._onNavTabClick)}
             </div>
           </div>
         </div>
