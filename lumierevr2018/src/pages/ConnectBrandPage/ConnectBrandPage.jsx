@@ -53,9 +53,9 @@ export default () => {
           Bakwas Bakwas Bakwas Bakwas
         </p>
         <div className="tile-wrap">
-          {tileData.map(tile => <Tile {...tile} />)}
+          {tileData.map(tile => <Tile key={tile.title} {...tile} />)}
         </div>
-        <button class="blue">Start a dialogue with us!</button>
+        <button className="blue">Start a dialogue with us!</button>
       </div>
     </div>
   );
