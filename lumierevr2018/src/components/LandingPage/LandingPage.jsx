@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 const renderNavPills = onNavTabClick => (
   <ul className="landing-tabs">
     <li>
-      <Link onClick={onNavTabClick} to="/create">
-        Create
+      <Link onClick={onNavTabClick} to="/start">
+        Start
       </Link>
     </li>
     <li>
-      <Link onClick={onNavTabClick} to="/distribute">
-        Distribute
+      <Link onClick={onNavTabClick} to="/theatre">
+        Theatre
       </Link>
     </li>
     <li>

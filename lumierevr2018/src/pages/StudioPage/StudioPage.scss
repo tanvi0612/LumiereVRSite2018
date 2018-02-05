@@ -1,0 +1,56 @@
+@import "../../styles/_functions.scss";
+
+.studio-page {
+	padding: 10% 5%;
+	background: #343434;
+	color: white;
+
+	@include mobile-lg {
+      		padding-top: 25%;
+    }
+
+	h3 {
+		font-weight: 300;
+
+		@include mobile-lg {
+      		text-align: center;
+    	}
+	}
+
+	p {
+		font-size: 24px;
+
+		@include mobile-lg {
+			font-size: 20px;
+		}
+     }
+
+	.right {
+			float: right;
+	}
+
+	img {
+		padding-top: 5%;
+	}
+
+	.mobile-resize-img {
+		@include mobile-lg {
+			height: 80%;
+			width: 80%;
+			padding-left: 20%;
+		}
+	}
+
+	button {
+		margin-top: 5%;
+		display: block;
+		margin-left: auto;
+    	margin-right: auto;
+    	width: 35%;
+
+    	@include mobile-lg {
+    		width: auto;
+    	}
+	}
+	
+}

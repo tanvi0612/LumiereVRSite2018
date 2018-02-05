@@ -18,6 +18,7 @@ import Homepage from "./pages/HomePage/HomePage.jsx";
 import Distribute from "./pages/DistributePage/DistributePage.jsx";
 import CareerPage from "./pages/CareerPage/CareerPage";
 import Connect from "./pages/ConnectPage/ConnectPage";
+import StudioPage from "./pages/StudioPage/StudioPage";
 import ContactUs from "./pages/ContactUsPage/ContactUsPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage/PrivacyPolicyPage";
 import TermsAndConditionsPage from "./pages/TermsAndConditionsPage/TermsAndConditionsPage";
@@ -82,6 +83,7 @@ class App extends Component {
             />
             <Route exact path="/PrivacyPolicy" component={PrivacyPolicyPage} />
             <Route exact path="/join" component={CareerPage} />
+            <Route exact path="/studio" component={StudioPage} />
           </div>
 
           <Footer />
