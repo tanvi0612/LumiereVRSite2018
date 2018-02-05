@@ -89,11 +89,11 @@ class Homepage extends Component {
               />
             </div>
           </div>
-          <img
+          {/* <img
             className="tablet-img"
             src={require("../../images/HomePage/tablet.png")}
             alt=""
-          />
+          /> */}
         </section>
 
         <section className="our-supporters-section">
