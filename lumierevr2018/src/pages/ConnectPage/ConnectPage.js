@@ -15,7 +15,7 @@ const JobCircles = [
     title: "Studio/Artists",
     secondaryTitles: ["Film Studios", "IP Owner", "VR Studio"],
     backgroundImage: require("../../images/ConnectPage/StudioBG.png"),
-    targetAfterSubmit: "brand"
+    targetAfterSubmit: "studio"
   }
 ];
 export default class Connect extends Component {
