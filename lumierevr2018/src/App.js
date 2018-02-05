@@ -20,6 +20,7 @@ import CareerPage from "./pages/CareerPage/CareerPage";
 
 import Connect from "./pages/ConnectPage/ConnectPage";
 import ConnectBrandPage from "./pages/ConnectBrandPage/ConnectBrandPage";
+import StudioPage from "./pages/StudioPage/StudioPage";
 
 import ContactUs from "./pages/ContactUsPage/ContactUsPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage/PrivacyPolicyPage";
@@ -75,7 +76,10 @@ class App extends Component {
 
           <div className="content-wrap">
             <Route exact path="/" component={Homepage} />
+
             <Route exact path="/start" component={Connect} />
+            <Route exact path="/start/studio" component={StudioPage} />
+
             <Route exact path="/contact" component={ContactUs} />
             <Route exact path="/start/brand" component={ConnectBrandPage} />
             <Route exact path="/theatre" component={Distribute} />
