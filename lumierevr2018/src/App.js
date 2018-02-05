@@ -81,10 +81,10 @@ class App extends Component {
             <Route exact path="/theatre" component={Distribute} />
             <Route
               exact
-              path="/TermsAndConditions"
+              path="/terms-and-conditions"
               component={TermsAndConditionsPage}
             />
-            <Route exact path="/PrivacyPolicy" component={PrivacyPolicyPage} />
+            <Route exact path="/privacy-policy" component={PrivacyPolicyPage} />
             <Route exact path="/join" component={CareerPage} />
           </div>
 

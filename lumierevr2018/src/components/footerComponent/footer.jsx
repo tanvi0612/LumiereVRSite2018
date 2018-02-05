@@ -16,10 +16,10 @@ class Footer extends Component {
                 <NavLink to="/contact">Contact Us</NavLink>
               </li>
               <li>
-                <NavLink to="/TermsAndConditions">Terms and Conditions</NavLink>
+                <NavLink to="/terms-and-conditions">Terms and Conditions</NavLink>
               </li>
               <li>
-                <NavLink to="/PrivacyPolicy">Privacy Policy</NavLink>
+                <NavLink to="/privacy-policy">Privacy Policy</NavLink>
               </li>
             </ul>
             <ul className="footer-col">
