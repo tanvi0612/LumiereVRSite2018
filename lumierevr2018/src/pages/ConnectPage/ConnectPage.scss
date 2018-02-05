@@ -6,7 +6,7 @@
   background: #343434;
   text-align: center;
   color: white;
-  
+
   padding-bottom: 10%;
   height: calc(100vh - 90px);
   @include mobile-lg {
@@ -34,7 +34,6 @@
     height: 500px;
     width: 500px;
     overflow: hidden;
-    
     z-index: 0;
     @include mobile-lg {
       margin: 2rem 0;
@@ -64,7 +63,7 @@
       padding: 1rem 0;
       transition: all 0.3s ease-out;
       @include mobile-sm {
-        height: 50%;
+        height: 30%;
       }
       h5 {
         text-align: center;
@@ -81,8 +80,12 @@
         list-style: none;
         margin: 0 auto;
         width: 60%;
+        @include mobile-lg {
+          padding: 2rem 0;
+          width: 100%;
+        }
         @include mobile-sm {
-          width: 75%;
+          width: 100%;
         }
         li {
           display: inline-block;
@@ -90,8 +93,8 @@
           margin: 0 1rem;
           transition: all 0.3s ease-in-out;
           cursor: pointer;
-         
-          padding: .1rem 1.5rem;
+
+          padding: 0.1rem 1.5rem;
           min-width: 7rem;
           text-align: center;
 
@@ -100,8 +103,11 @@
             margin: 0 0.3rem;
             border: 1px solid white;
             text-align: center;
-            padding: .2rem .3rem;
+            padding: 0.2rem 0.3rem;
             min-width: 4.7rem;
+          }
+          @include mobile-sm {
+            font-size: 12px;
           }
           &.active {
             color: white;
@@ -110,16 +116,14 @@
             border-radius: 2rem;
             font-size: 30px;
 
-             @include mobile-lg {
-            font-size: 15px;
-            margin: 0 0.3rem;
-            text-align: center;
-            padding: .2rem .1rem;
-            min-width: 5.8rem;
+            @include mobile-lg {
+              font-size: 15px;
+              margin: 0 0.3rem;
+              text-align: center;
+              padding: 0.2rem 0.1rem;
+              min-width: 5.8rem;
             }
           }
-
-
         }
       }
 
@@ -127,6 +131,9 @@
         text-align: center;
         width: 60%;
         margin: 0 auto;
+        @include mobile-lg {
+          width: 75%;
+        }
         input {
           display: block;
           color: black;
@@ -174,6 +181,12 @@
       }
       &.selected {
         height: 60%;
+        @include mobile-lg {
+          height: 75%;
+        }
+        @include mobile-sm {
+          height: 85%;
+        }
       }
     }
     &:first-child {

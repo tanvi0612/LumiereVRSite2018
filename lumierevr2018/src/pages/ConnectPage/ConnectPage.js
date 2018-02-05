@@ -9,13 +9,13 @@ const JobCircles = [
     title: "Brands/Advertising",
     secondaryTitles: ["Placements", "Injections", "Sponsorships"],
     backgroundImage: require("../../images/ConnectPage/BrandBG.png"),
-   
+    targetAfterSubmit: "brand"
   },
   {
     title: "Studio/Artists",
     secondaryTitles: ["Film Studios", "IP Owner", "VR Studio"],
     backgroundImage: require("../../images/ConnectPage/StudioBG.png"),
-    
+    targetAfterSubmit: "studio"
   }
 ];
 export default class Connect extends Component {
@@ -29,7 +29,7 @@ export default class Connect extends Component {
     };
   }
 
-  _handleSubmit = async e => {
+  _handleSubmit = async (e, targetAfterSubmit) => {
     e.preventDefault();
 
     // data that needed to be added
@@ -54,9 +54,11 @@ export default class Connect extends Component {
         success: true,
         titleSelected: null
       });
-      alert(
-        "Thanks for contacting us. We will get back to you as soon as possible"
-      );
+
+      this.props.history.push(`/start/${targetAfterSubmit}`);
+      // alert(
+      //   "Thanks for contacting us. We will get back to you as soon as possible"
+      // );
     } catch (e) {
       console.error(e);
     }

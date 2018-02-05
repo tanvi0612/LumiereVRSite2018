@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import SendRavenFor from "../../components/SendRaven";
 
 import "./ConnectBrandPage.css";
@@ -42,20 +44,19 @@ export default () => {
     <div className="connect-brand-page page first-section">
       <div className="container">
         <h3>
-          <strong>bleh belh belhe</strong>
+          <strong>Immerse your brand into every reality</strong>
         </h3>
         <p>
-          Bakwas Bakwas Bakwas Bakwas Bakwas Bakwas Bakwas Bakwas Bakwas Bakwas
-          Bakwas Bakwas Bakwas Bakwas Bakwas Bakwas Bakwas Bakwas Bakwas Bakwas
-          Bakwas Bakwas Bakwas Bakwas Bakwas Bakwas Bakwas Bakwas Bakwas Bakwas
-          Bakwas Bakwas Bakwas Bakwas Bakwas Bakwas Bakwas Bakwas Bakwas Bakwas
-          Bakwas Bakwas Bakwas Bakwas Bakwas Bakwas Bakwas Bakwas Bakwas Bakwas
-          Bakwas Bakwas Bakwas Bakwas
+          Every brand needs to connect to customers on a personal level, virtual
+          reality’s immersive nature allow products to seamlessly integrate with
+          the user’s suroundings without feeling forced or out of place.
         </p>
         <div className="tile-wrap">
-          {tileData.map(tile => <Tile {...tile} />)}
+          {tileData.map(tile => <Tile key={tile.title} {...tile} />)}
         </div>
-        <button class="blue">Start a dialogue with us!</button>
+        <Link to="/thank-you">
+          <button className="blue">Start a dialogue with us!</button>
+        </Link>
       </div>
     </div>
   );

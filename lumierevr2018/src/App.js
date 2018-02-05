@@ -20,10 +20,13 @@ import CareerPage from "./pages/CareerPage/CareerPage";
 
 import Connect from "./pages/ConnectPage/ConnectPage";
 import ConnectBrandPage from "./pages/ConnectBrandPage/ConnectBrandPage";
+import StudioPage from "./pages/StudioPage/StudioPage";
 
 import ContactUs from "./pages/ContactUsPage/ContactUsPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage/PrivacyPolicyPage";
 import TermsAndConditionsPage from "./pages/TermsAndConditionsPage/TermsAndConditionsPage";
+
+import ThankYouPage from "./pages/ThankYouPage/ThankYouPage";
 
 const history = createBrowserHistory();
 
@@ -75,9 +78,12 @@ class App extends Component {
 
           <div className="content-wrap">
             <Route exact path="/" component={Homepage} />
+
             <Route exact path="/start" component={Connect} />
-            <Route exact path="/contact" component={ContactUs} />
+            <Route exact path="/start/studio" component={StudioPage} />
             <Route exact path="/start/brand" component={ConnectBrandPage} />
+
+            <Route exact path="/contact" component={ContactUs} />
             <Route exact path="/theatre" component={Distribute} />
             <Route
               exact
@@ -86,6 +92,8 @@ class App extends Component {
             />
             <Route exact path="/privacy-policy" component={PrivacyPolicyPage} />
             <Route exact path="/join" component={CareerPage} />
+
+            <Route exact path="/thank-you" component={ThankYouPage} />
           </div>
 
           <Footer />
