@@ -73,7 +73,10 @@ class App extends Component {
 
           <div className="content-wrap">
             <Route exact path="/" component={Homepage} />
+
             <Route exact path="/start" component={Connect} />
+            <Route exact path="/start/studio" component={StudioPage} />
+
             <Route exact path="/contact" component={ContactUs} />
             <Route exact path="/theatre" component={Distribute} />
             <Route
@@ -83,7 +86,6 @@ class App extends Component {
             />
             <Route exact path="/PrivacyPolicy" component={PrivacyPolicyPage} />
             <Route exact path="/join" component={CareerPage} />
-            <Route exact path="/studio" component={StudioPage} />
           </div>
 
           <Footer />
