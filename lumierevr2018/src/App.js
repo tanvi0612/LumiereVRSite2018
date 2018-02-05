@@ -26,6 +26,8 @@ import ContactUs from "./pages/ContactUsPage/ContactUsPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage/PrivacyPolicyPage";
 import TermsAndConditionsPage from "./pages/TermsAndConditionsPage/TermsAndConditionsPage";
 
+import ThankYouPage from "./pages/ThankYouPage/ThankYouPage";
+
 const history = createBrowserHistory();
 
 class App extends Component {
@@ -90,6 +92,8 @@ class App extends Component {
             />
             <Route exact path="/PrivacyPolicy" component={PrivacyPolicyPage} />
             <Route exact path="/join" component={CareerPage} />
+
+            <Route exact path="/thank-you" component={ThankYouPage} />
           </div>
 
           <Footer />
