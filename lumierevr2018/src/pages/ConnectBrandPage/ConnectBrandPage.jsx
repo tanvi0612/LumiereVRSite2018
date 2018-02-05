@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import SendRavenFor from "../../components/SendRaven";
 
 import "./ConnectBrandPage.css";
@@ -55,7 +57,9 @@ export default () => {
         <div className="tile-wrap">
           {tileData.map(tile => <Tile key={tile.title} {...tile} />)}
         </div>
-        <button className="blue">Start a dialogue with us!</button>
+        <Link to="/thank-you">
+          <button className="blue">Start a dialogue with us!</button>
+        </Link>
       </div>
     </div>
   );
