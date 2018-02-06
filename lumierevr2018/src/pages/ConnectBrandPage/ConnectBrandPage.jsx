@@ -30,7 +30,7 @@ const tileData = [
   {
     title: `Sponsorship`,
     desc: `Sponsor your own branded VR short film that delivers your story directly to your target audience in an innovative and immersive experience`,
-    tileColor: "#FF9AC4"
+    tileColor: "#F06292"
   },
   {
     title: `AdSpace`,
