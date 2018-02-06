@@ -3,6 +3,17 @@
 .connect-brand-page {
   text-align: center;
   background: #343434;
+
+      p {
+        font-size: 20px;
+
+        @include mobile-lg {
+          font-size: 1.7rem;
+        }
+
+      }    
+    
+
   color: white;
   > .container {
     max-width: 1000px;
@@ -34,6 +45,12 @@
       }
       p {
         margin: 0;
+        font-size: 20px;
+        font-weight: 300;
+
+        @include mobile-lg {
+          font-size: 1.6rem;
+        }
       }
     }
   }

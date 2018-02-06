@@ -43,9 +43,9 @@ export default () => {
   return (
     <div className="connect-brand-page page first-section">
       <div className="container">
-        <h3>
+        <h2>
           <strong>Immerse your brand into every reality</strong>
-        </h3>
+        </h2>
         <p>
           Every brand needs to connect to customers on a personal level, virtual
           reality’s immersive nature allow products to seamlessly integrate with
