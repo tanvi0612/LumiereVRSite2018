@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 import SendRavenFor from "../../components/SendRaven";
 import SubmitButton from "../../components/SubmitButton/SubmitButton";
@@ -58,11 +59,13 @@ export default class ContactUsForm extends Component {
           required
           placeholder="How can we help you?"
         />
-        <SubmitButton
-          loading={this.state.loading}
-          success={this.state.success}
-          color="orange"
-        />
+        <Link to="/thank-you">
+          <SubmitButton
+            loading={this.state.loading}
+            success={this.state.success}
+            color="orange"
+          />
+        </Link>
       </form>
     );
   }

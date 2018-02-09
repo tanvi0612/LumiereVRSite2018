@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default props => {
   return (
@@ -26,7 +27,9 @@ export default props => {
               name="profile"
               placeholder={props.additionalLinkHints || `IMDb/LinkedIn`}
             />
-            <button type="submit">Apply Now</button>
+            <Link to="/thank-you">
+              <button type="submit">Apply Now</button>
+            </Link>
           </form>
         )}
       </div>
