@@ -5,6 +5,9 @@ import moment from "moment";
 import * as Kaleidoscope from "kaleidoscopejs";
 import CountdownClock from "../../components/CountdownClock/CountdownClock";
 import ContactUsForm from "../ContactUsPage/ContactForm";
+
+import poster from "../../images/HomePage/LoadingImage.png";
+
 import "./Homepage.css";
 
 class Homepage extends Component {
@@ -18,7 +21,8 @@ class Homepage extends Component {
       containerId: "#video-wrap",
       autoplay: true,
       loop: true,
-      muted: true
+      muted: true,
+      poster
     });
     viewer.render();
   };
