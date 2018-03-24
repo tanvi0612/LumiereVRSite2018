@@ -77,7 +77,7 @@ class Homepage extends Component {
                 The Mood pod creates a VR mini getaway from your work leaving you fully recharged and in sync with your emotions.
               </p>
               <button className="purple">
-                <a href="/contact">Learn more</a>
+                <a href="/contact">Get in Touch!</a>
               </button>
             </div>
           </div>
