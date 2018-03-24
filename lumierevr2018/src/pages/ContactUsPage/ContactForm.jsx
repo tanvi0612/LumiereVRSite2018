@@ -36,9 +36,6 @@ export default class ContactUsForm extends Component {
       await SendRavenFor("contact-us", data);
       await this.setState({ loading: false, success: true });
       document.getElementById("contact-us-form").reset();
-      alert(
-        "Thanks for contacting us. We will get back to you as soon as possible"
-      );
     } catch (e) {
       console.error(e);
       alert(
