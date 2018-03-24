@@ -53,6 +53,41 @@ class Homepage extends Component {
           </div>
         </section>
 
+        {/* Mood Pod Section */}
+        <section className="vr-theatre-section">
+          <img
+            className="background-img"
+            src={require("../../images/HomePage/moodPodSecBackground.png")}
+            alt=""
+          />
+          <div className="details">
+            <div className="container">
+              <h4>Introducing the Mood Pod</h4>
+              <p>
+                Escape the office through mindful teleportation.<br />
+              </p>
+              <p>
+                Mood pods provide an escape to balance stress at work. 
+              </p>
+              <p>
+                The Mood Pod is powered by state of the art VR technology pushing the limits of rendering to deliver the 
+                ultimate 10 minute break at the work place.
+              </p>
+              <p> 
+                The Mood pod creates a VR mini getaway from your work leaving you fully recharged and in sync with your emotions.
+              </p>
+              <button className="purple">
+                <a href="/contact">Learn more</a>
+              </button>
+            </div>
+          </div>
+          {/* <img
+            className="tablet-img"
+            src={require("../../images/HomePage/tablet.png")}
+            alt=""
+          /> */}
+        </section>
+
         {/* Victoria Secret Section */}
         <section className="victoria-section">
           <div className="timer-wrap">
