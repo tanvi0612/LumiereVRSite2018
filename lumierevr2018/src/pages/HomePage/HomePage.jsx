@@ -62,21 +62,13 @@ class Homepage extends Component {
           />
           <div className="details">
             <div className="container">
-              <h4>Introducing the Mood Pod</h4>
-              <p>
+              <h3> <b>Introducing the Mood Pod</b></h3>
+              <h4>
                 Escape the office through mindful teleportation.<br />
-              </p>
-              <p>
-                Mood pods provide an escape to balance stress at work. 
-              </p>
-              <p>
-                The Mood Pod is powered by state of the art VR technology pushing the limits of rendering to deliver the 
-                ultimate 10 minute break at the work place.
-              </p>
-              <p> 
-                The Mood pod creates a VR mini getaway from your work leaving you fully recharged and in sync with your emotions.
-              </p>
-              <button className="purple">
+
+                Contact us for pilot infomration!
+              </h4>
+                <button className="purple">
                 <a href="/contact">Get in Touch!</a>
               </button>
             </div>
