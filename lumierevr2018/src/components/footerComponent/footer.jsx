@@ -47,7 +47,7 @@ class Footer extends Component {
             </div>
           </div>
           <div className="copyright-line">
-            Copywright © {new Date().getFullYear()} LumiereVR Co All rights
+            Copyright © {new Date().getFullYear()} LumiereVR Co All rights
             reserved
           </div>
         </div>

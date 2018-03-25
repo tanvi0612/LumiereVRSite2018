@@ -53,33 +53,6 @@ class Homepage extends Component {
           </div>
         </section>
 
-        {/* Mood Pod Section */}
-        <section className="vr-theatre-section">
-          <img
-            className="background-img"
-            src={require("../../images/HomePage/moodPodSecBackground.png")}
-            alt=""
-          />
-          <div className="details">
-            <div className="container">
-              <h3> <b>Introducing the Mood Pod</b></h3>
-              <h4>
-                Escape the office through mindful teleportation.<br />
-
-                Contact us for pilot infomration!
-              </h4>
-                <button className="purple">
-                <a href="/contact">Get in Touch!</a>
-              </button>
-            </div>
-          </div>
-          {/* <img
-            className="tablet-img"
-            src={require("../../images/HomePage/tablet.png")}
-            alt=""
-          /> */}
-        </section>
-
         {/* Victoria Secret Section */}
         <section className="victoria-section">
           <div className="timer-wrap">
@@ -111,7 +84,7 @@ class Homepage extends Component {
                 our theaters to drive engagements!
               </p>
               <button className="purple">
-                <a href="/distribute">Learn more</a>
+                <a href="https://www.vrscreenings.com/">Learn more</a>
               </button>
               <img
                 className="retinad-logo"

@@ -11,9 +11,8 @@ export const renderNavPills = tabClickHandle => (
       </NavLink>
     </li>
     <li>
-      <NavLink onClick={tabClickHandle} to="/theatre">
-        Theatre
-      </NavLink>
+      <a href="https://www.vrscreenings.com/"> Theatre
+      </a>
     </li>
     <li>
       <NavLink onClick={tabClickHandle} to="/contact">
