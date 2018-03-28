@@ -10,13 +10,15 @@ class Footer extends Component {
           <div className="footer-row">
             <ul className="footer-col">
               <li>
-                <NavLink to="/careers">Join Us</NavLink>
+                <NavLink to="/join">Join Us</NavLink>
               </li>
               <li>
                 <NavLink to="/contact">Contact Us</NavLink>
               </li>
               <li>
-                <NavLink to="/terms-and-conditions">Terms and Conditions</NavLink>
+                <NavLink to="/terms-and-conditions">
+                  Terms and Conditions
+                </NavLink>
               </li>
               <li>
                 <NavLink to="/privacy-policy">Privacy Policy</NavLink>
@@ -24,7 +26,12 @@ class Footer extends Component {
             </ul>
             <ul className="footer-col">
               <li>
-                <a href="https://firebasestorage.googleapis.com/v0/b/lumisite-e6542.appspot.com/o/Press-Kit.pdf?alt=media&token=99055e2a-9221-4843-8278-c1d5f88f1f1b" target="_blank">Press Kit</a>
+                <a
+                  href="https://firebasestorage.googleapis.com/v0/b/lumisite-e6542.appspot.com/o/Press-Kit.pdf?alt=media&token=99055e2a-9221-4843-8278-c1d5f88f1f1b"
+                  target="_blank"
+                >
+                  Press Kit
+                </a>
               </li>
               <li>
                 <a href="https://medium.com/lumierevr">Blog</a>
