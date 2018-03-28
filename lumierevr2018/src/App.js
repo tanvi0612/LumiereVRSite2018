@@ -41,6 +41,11 @@ class App extends Component {
 
   componentDidMount() {
     if (!this.state.coverRevealed) this.scrollToOpenListener();
+
+    // Listening to Routing Changes
+    history.listen((location, action) => {
+      if (location.pathname !== "/") this._openLid();
+    });
   }
 
   scrollToOpenListener = () => {
